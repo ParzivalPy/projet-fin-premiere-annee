@@ -10,8 +10,7 @@
 #define MAX_TITLE 256
 #define MAX_CONTENT 16384
 
-void trim_newline(char *str)
-{
+void trim_newline (char *str) {
     size_t len = strlen(str);
     while (len > 0 && (str[len - 1] == '\n' || str[len - 1] == '\r'))
     {
@@ -124,7 +123,12 @@ int main()
                 FILE *out = fopen(filename, "w");
                 if (out)
                 {
-                    fprintf(out, "<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n<meta charset=\"UTF-8\">\n<title>%s</title>\n</head>\n<body>\n<h1>%s</h1>\n%s\n</body>\n</html>\n", title, title, content);
+                    fprintf(out, HTML_HEADER, title);
+                    fprintf(out, TITLE_H1, title);
+                    fprintf(out, "%s\n", content);
+                    fprintf(out, HTML_FOOTER);
+                    fprintf(out,PARAGRAPH);   
+                    fprintf(out, CHOICES);                
                     fclose(out);
                 }
                 content[0] = '\0';
@@ -155,7 +159,12 @@ int main()
         FILE *out = fopen(filename, "w");
         if (out)
         {
-            fprintf(out, "<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n<meta charset=\"UTF-8\">\n<title>%s</title>\n</head>\n<body>\n<h1>%s</h1>\n%s\n</body>\n</html>\n", title, title, content);
+            fprintf(out, HTML_HEADER, title);
+            fprintf(out, TITLE_H1, title);
+            fprintf(out, "%s\n", content);
+            fprintf(out, HTML_FOOTER);
+            fprintf(out,PARAGRAPH);
+            fprintf(out, CHOICES);
             fclose(out);
         }
     }
@@ -164,5 +173,5 @@ int main()
     printf("Chapitres exportés en HTML dans le dossier '%s'.\n", output_dir);
     return 0;
 
-    
+
 }

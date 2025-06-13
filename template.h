@@ -19,4 +19,14 @@ const char* TITLE_H1 =
   "  %s\n"
   "</h1>\n";
 
+const char* PARAGRAPH = 
+"<p>\n"
+"   %s\n"
+"</p>\n";
+
+const char* CHOICES = 
+"<choice>\n"
+"   %s\n"
+"</choice>\n";
+
 #endif
