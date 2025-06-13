@@ -126,9 +126,7 @@ int main()
                     fprintf(out, HTML_HEADER, title);
                     fprintf(out, TITLE_H1, title);
                     fprintf(out, "%s\n", content);
-                    fprintf(out, HTML_FOOTER);
-                    fprintf(out,PARAGRAPH);   
-                    fprintf(out, CHOICES);                
+                    fprintf(out, HTML_FOOTER);              
                     fclose(out);
                 }
                 content[0] = '\0';
@@ -163,14 +161,12 @@ int main()
             fprintf(out, TITLE_H1, title);
             fprintf(out, "%s\n", content);
             fprintf(out, HTML_FOOTER);
-            fprintf(out,PARAGRAPH);
-            fprintf(out, CHOICES);
             fclose(out);
         }
     }
 
     fclose(in);
-    printf("Chapitres exportés en HTML dans le dossier '%s'.\n", output_dir);
+    printf("Chapitres exportés en HTML dans le dossier %s.\n", output_dir);
     return 0;
 
 
