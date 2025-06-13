@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <sys/stat.h>  // Pour mkdir
+#include <sys/types.h> // Pour les permissions
+#include "template.h" //Pour le fichier des template
 
 #define MAX_LINE 2048
 #define MAX_ID 32
@@ -16,49 +19,86 @@ void trim_newline(char *str)
     }
 }
 
-// Transforme <choice idref="XX">Texte</choice> en <a href="XX.html">Texte</a>
 void convert_choices_to_links(char *content)
 {
-    char buffer[MAX_CONTENT];
-    char *src = content;
-    char *dst = buffer;
-    while (*src)
+    if (content == NULL)
     {
-        if (strncmp(src, "<choice idref=\"", 15) == 0)
-        {
-            src += 15;
-            char id[32];
-            int i = 0;
-            while (*src && *src != '"' && i < 31)
-            {
-                id[i++] = *src++;
-            }
-            id[i] = '\0';
-            if (*src == '"')
-                src++;
-            if (*src == '>')
-                src++;
-            dst += sprintf(dst, "<a href=\"%s.html\">", id);
-            while (*src && strncmp(src, "</choice>", 9) != 0)
-            {
-                *dst++ = *src++;
-            }
-            strcpy(dst, "</a>");
-            dst += 4;
-            if (strncmp(src, "</choice>", 9) == 0)
-                src += 9;
-        }
-        else
-        {
-            *dst++ = *src++;
-        }
+        return; // Gestion de l'entrée NULL
     }
-    *dst = '\0';
-    strcpy(content, buffer);
+
+    const char *search = "<a>";
+    size_t search_len = strlen(search);
+
+    // Calculer la taille maximale du nouveau contenu
+    size_t original_len = strlen(content);
+    size_t max_new_len = original_len + 256; // Ajouter un espace supplémentaire pour les remplacements
+    char *new_content = (char *)malloc(max_new_len);
+    if (new_content == NULL)
+    {
+        printf("Erreur : Impossible d'allouer de la mémoire.\n");
+        return;
+    }
+
+    char *src = content;
+    char *dst = new_content;
+
+    while ((src = strstr(src, search)) != NULL)
+    {
+        // Copier le contenu avant "<a>"
+        size_t bytes_to_copy = src - content;
+        strncpy(dst, content, bytes_to_copy);
+        dst += bytes_to_copy;
+
+        // Rechercher le numéro de chapitre dans idref="XX"
+        char *idref_start = strstr(content, "idref=\"");
+        if (idref_start)
+        {
+            idref_start += 7; // Avancer après 'idref="'
+            char chapter_id[MAX_ID];
+            char *idref_end = strchr(idref_start, '"');
+            if (idref_end)
+            {
+                size_t id_len = idref_end - idref_start;
+                strncpy(chapter_id, idref_start, id_len);
+                chapter_id[id_len] = '\0';
+
+                // Construire le remplacement avec le numéro de chapitre
+                char replacement[MAX_TITLE];
+                snprintf(replacement, sizeof(replacement), "<a href=\"%s.html\">", chapter_id);
+                size_t replacement_len = strlen(replacement);
+
+                // Copier le remplacement dans le nouveau buffer
+                strncpy(dst, replacement, replacement_len);
+                dst += replacement_len;
+            }
+        }
+
+        // Avancer après "<a>"
+        src += search_len;
+        content = src;
+    }
+
+    // Copier le reste du contenu
+    strcpy(dst, content);
+
+    // Remplacer le contenu original par le nouveau
+    strcpy(content, new_content);
+
+    // Libérer la mémoire temporaire
+    free(new_content);
 }
 
 int main()
 {
+    const char *output_dir = "export/"; // Dossier de destination
+
+    // Créer le dossier de destination s'il n'existe pas
+    struct stat st = {0};
+    if (stat(output_dir, &st) == -1)
+    {
+        mkdir(output_dir, 0700); // Permissions : lecture/écriture/exécution pour le propriétaire
+    }
+
     FILE *in = fopen("text.txt", "r");
     if (!in)
     {
@@ -78,8 +118,8 @@ int main()
             // Si on était déjà dans un chapitre, on écrit le fichier précédent
             if (in_chapter)
             {
-                char filename[64];
-                snprintf(filename, sizeof(filename), "%s.html", id);
+                char filename[256];
+                snprintf(filename, sizeof(filename), "%s%s.html", output_dir, id); // Inclure le chemin
                 convert_choices_to_links(content);
                 FILE *out = fopen(filename, "w");
                 if (out)
@@ -109,8 +149,8 @@ int main()
     // Dernier chapitre
     if (in_chapter)
     {
-        char filename[64];
-        snprintf(filename, sizeof(filename), "%s.html", id);
+        char filename[256];
+        snprintf(filename, sizeof(filename), "%s%s.html", output_dir, id); // Inclure le chemin
         convert_choices_to_links(content);
         FILE *out = fopen(filename, "w");
         if (out)
@@ -121,6 +161,8 @@ int main()
     }
 
     fclose(in);
-    printf("Chapitres exportés en HTML.\n");
+    printf("Chapitres exportés en HTML dans le dossier '%s'.\n", output_dir);
     return 0;
+
+    
 }
