@@ -77,3 +77,7 @@ a {
   text-decoration: none;
   font-weight: bold;
 }
+
+choice a {
+  margin-left: 20px;
+}

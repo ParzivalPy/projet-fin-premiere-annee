@@ -93,18 +93,26 @@ function updateStats() {
     strategy += 15;
   }
 
-  console.log("Final Stats:");
-  console.log("Attack:", attack);
-  console.log("Defense:", defense);
-  console.log("Strategy:", strategy);
-
   sessionStorage.setItem("attack", attack);
   sessionStorage.setItem("defense", defense);
   sessionStorage.setItem("strategy", strategy);
 }
 
-document
-  .getElementsByTagName("a")[0]
-  .addEventListener("click", function (event) {
-    updateStats();
-  });
+if (window.location.href.includes("09.html")) {
+  document
+    .getElementsByTagName("a")[0]
+    .addEventListener("click", function (event) {
+      if (
+        document.querySelector('input[name="question1"]:checked') &&
+        document.querySelector('input[name="question2"]:checked') &&
+        document.querySelector('input[name="question3"]:checked') &&
+        document.querySelector('input[name="question4"]:checked')
+      ) {
+        updateStats();
+      } else {
+        event.preventDefault();
+        alert("Please answer all questions before proceeding.");
+        return;
+      }
+    });
+}

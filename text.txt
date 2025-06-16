@@ -106,11 +106,11 @@
 <chapter id="11">Premier contact</chapter>
 <form>
 <p>Agh'Zarr bondit vers toi avec une vitesse inhumaine.</p>
-<input type="radio" id="t1r1" name="tour1">
+<input type="radio" id="t1r1" name="tour">
 <label for="t1r1">Attaque frontale, tu hurles en visant sa poitrine.</label><br />
-<input type="radio" id="t1r2" name="tour1">
+<input type="radio" id="t1r2" name="tour">
 <label for="t1r2">Tu esquives et contre-attaques.</label><br />
-<input type="radio" id="t1r3" name="tour1">
+<input type="radio" id="t1r3" name="tour">
 <label for="t1r3">Tu relies ton attaque avec celle d’Anaïs et Gabriel.</label><br />
 </form>
 <choice idref="12"> Utiliser cette méthode <a>Chapitre 12</a></choice>
@@ -118,11 +118,11 @@
 <chapter id="12">La rage d'Agh'Zarr</chapter>
 <form>
 <p>Il frappe le sol et déclenche une onde de choc. Tes alliés sont projetés en arrière.</p>
-<input type="radio" id="t2r1" name="tour2">
+<input type="radio" id="t2r1" name="tour">
 <label for="t2r1">Tu entres en rage et fonces tête baissée.</label><br />
-<input type="radio" id="t2r2" name="tour2">
+<input type="radio" id="t2r2" name="tour">
 <label for="t2r2">Tu lèves ton bouclier, prêt à encaisser.</label><br />
-<input type="radio" id="t2r3" name="tour2">
+<input type="radio" id="t2r3" name="tour">
 <label for="t2r3">Tu feintes une chute pour l’attirer et frapper quand il baisse sa garde.</label><br />
 </form>
 <choice idref="13"> Utiliser cette méthode <a>Chapitre 13</a></choice>
@@ -130,11 +130,11 @@
 <chapter id="13">L'assault final</chapter>
 <form>
 <p>Agh’Zarr est blessé, titubant… mais sa haine grandit. C’est le dernier coup.</p>
-<input type="radio" id="t3r1" name="tour3">
+<input type="radio" id="t3r1" name="tour">
 <label for="t3r1">Tu attaques à pleine puissance.</label><br />
-<input type="radio" id="t3r2" name="tour3">
+<input type="radio" id="t3r2" name="tour">
 <label for="t3r2">Gabriel place un piège avec Anaïs, tu l’y attires</label><br />
-<input type="radio" id="t3r3" name="tour3">
+<input type="radio" id="t3r3" name="tour">
 <label for="t3r3">Tu te sacrifies pour une ouverture à Anaïs.</label><br />
 </form>
 
