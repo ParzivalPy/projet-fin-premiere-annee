@@ -137,3 +137,45 @@ Le lendemain de notre installation, l’entraînement commence, c’est dur mais
 <input type="radio" id="t3r3" name="tour3">
 <label for="t3r3">Tu te sacrifies pour une ouverture à Anaïs.</label><br />
 </form>
+
+<chapter id="14">Le Sang des Braves</chapter>
+<p>Le monde se teinte de rouge.</p>
+<p>Ton épée tombe. Ton cœur aussi. </p>
+<p>Tu vois Agh’Zarr abattre Anaïs… puis Gabriel. </p>
+<p>Plus aucun chant. Dyonie est perdue. </p>
+<p>"Tu es mort." </p>
+
+<chapter id="15">Le poids du Silence</chapter>
+<p>Tu hurles, rassembles tout ce qu’il te reste de force, de colère, de douleur… Ta lame fend l’air une dernière fois, pleine de rage ancestrale. </p>
+<p>CLAC. </p>
+<p>Le coup porte. Agh’Zarr s’écroule à genoux… puis s’effondre à tes pieds. Tu restes là, figé. Tu entends ta propre respiration haletante, le cœur battant.</p>
+<p>Tu as gagné. </p>
+<p>Une chaleur étrange t’envahit. Une paix. Une sensation nouvelle, comme si les chaînes du destin venaient de se briser.</p>
+<p>Tu tombes à genoux, les larmes aux yeux. Tu fermes les paupières. Tu adresses une prière silencieuse à tes ancêtres : "Merci… merci pour cette victoire… pour cette liberté." </p>
+<p>Le silence est total.</p>
+<p>…</p>
+<p>……</p>
+<p>…………</p>
+<p>Tu ouvres lentement les yeux. </p>
+<p>Et là — ton cœur s’arrête. </p>
+<p>Devant toi : les corps. Anaïs. Gabriel. Noam. Tes frères d’armes. Tous. </p>
+<p>Inanimés. Sanglants. Figés dans des expressions de douleur ou de courage. </p>
+<p>Tu es seul.</p>
+<p>Tu te relèves, tremblant. L’épée tombe de ta main.</p>
+<p>Tu hurles… mais il n’y a plus personne pour t’entendre. </p>
+<p>Tu avais rêvé de liberté, de gloire, de chants…</p>
+<p> … mais cette victoire est un tombeau.</p>
+<p>Tu marches. Sans but. Sans foyer. Sans nom. </p>
+<p>Tu deviens une légende — non pas pour ce que tu as sauvé, mais pour ce que tu as perdu. </p>
+<p>"Tu as gagné. Mais tout est mort." </p>
+
+<chapter id="16">La victoire des vivants</chapter>
+<p>Tu frappes une dernière fois. Agh’Zarr recule… titube… puis s’effondre. Un grand silence s’abat sur le champ de bataille.</p>
+<p>C’est fini.</p>
+<p>Tu restes debout, haletant, le regard vide. Autour de toi, la poussière retombe lentement.</p>
+<p>Puis tu entends un cri — c’est Anaïs. Elle court vers toi, les yeux pleins de larmes. Gabriel arrive juste derrière, blessé mais vivant. Noam lève un poing en l’air, épuisé mais souriant. </p>
+<p>Un rire nerveux t’échappe. Tu ne sais pas trop si tu veux pleurer ou crier. </p>
+<p> Vous avez gagné. </p>
+<p>Contre toute attente, vous êtes en vie. Pas tous. Mais assez pour reconstruire. Assez pour raconter ce jour. </p>
+<p>Et toi… Tu n’es plus le jeune Florian. </p>
+<p>Tu es devenu un guerrier. Un vrai.</p>
