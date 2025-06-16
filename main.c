@@ -40,6 +40,7 @@ int main()
     char id[MAX_ID], title[MAX_TITLE];
     char content[MAX_CONTENT];
     char id_choice[MAX_ID];
+    char title_choice[MAX_TITLE];
     int in_chapter = 0;
 
     while (fgets(line, sizeof(line), in))
@@ -73,9 +74,9 @@ int main()
         }
         else if (strncmp(line, "<choice", 7) == 0)
         {
-            sscanf(line, "<choice idref=\"%[^\"]\">%[^<]<", id_choice, title);
+            sscanf(line, "<choice idref=\"%[^\"]\">%[^<]<", id_choice, title_choice);
             char choice_html[512];
-            snprintf(choice_html, sizeof(choice_html), "<br /><choice idref=\"%s\">%s<a href=\"%s.html\">Chapitre %s</a></choice>", id_choice, title, id_choice, id_choice);
+            snprintf(choice_html, sizeof(choice_html), "<br /><choice idref=\"%s\">%s<a href=\"%s.html\">Chapitre %s</a></choice>", id_choice, title_choice, id_choice, id_choice);
             strcat(content, choice_html);
         }
         else
