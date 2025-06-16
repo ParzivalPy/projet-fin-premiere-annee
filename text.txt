@@ -1,58 +1,139 @@
-<chapter id="01">Le Village de Grinheim</chapter>
-<p>Vous êtes originaire du village de Grinheim, un endroit tranquille niché entre des collines verdoyantes et une forêt dense. Le village, autrefois prospère, se trouve aujourd'hui sous l'emprise d'une malédiction ancienne. Les récoltes pourrissent, les enfants tombent malades, et un sentiment d'oppression envahit l'air. Selon la légende, un artefact puissant, le Collier aux Sept Pierres, possède le pouvoir de briser la malédiction et de sauver Grinheim.</p>
-<p>Cette légende a traversé les générations, mais personne n'a osé se lancer à sa recherche. C’est vous qui allez tenter de briser ce cycle de malheur. Vous partez à l’aube, votre sac de voyage prêt, les premiers rayons du soleil caressant la terre. Vous avez entendu que le collier se trouve quelque part au-delà de la Forêt de Bois-Perdu, un endroit que peu de gens osent traverser.</p>
-<p>Le vent frais souffle à travers les arbres, vous donnant un dernier souffle de courage. Vous faites vos adieux aux habitants de Grinheim et prenez le chemin de l’aventure.</p>
-<choice idref="02">Suivre le chemin au sud, qui mène à la Forêt de Bois-Perdu. <a>Chapitre 2</a></choice>
-<choice idref="03">Vous dirigez vers l’Est, où un ancien château a été aperçu par les voyageurs. <a>Chapitre 3</a></choice>
-
-<chapter id="02">La Forêt de Bois-Perdu</chapter>
-<p>Vous entrez dans la Forêt de Bois-Perdu, un endroit sinistre et mystérieux. Les arbres s’élèvent comme des géants, leurs branches entrelacées formant un plafond presque imperméable à la lumière. Le sol est recouvert de mousse épaisse, et l’air est chargé d’humidité et d’une magie ancienne qui semble vous envelopper.</p>
-<p>Chaque bruit semble amplifié dans cette forêt. Un oiseau à la silhouette argentée s’envole à votre approche, et vous le suivez instinctivement, espérant qu’il vous guidera vers une sortie. Cependant, au bout de quelques heures de marche, vous vous rendez compte que la forêt vous a perdu. La végétation dense vous entoure, et tout semble identique.</p>
-<choice idref="03">Continuer à suivre l’oiseau, espérant qu’il vous conduira à une sortie. <a>Chaptre 3</a></choice>
-<choice idref="04">Partir vers le nord, une route qui mène apparemment vers une falaise escarpée. <a>Chapitre 4</a></choice>
-<choice idref="05">Revenir sur vos pas, vous méfiant des ombres grandissantes dans la forêt. <a>Chapitre 5</a></choice>
-
-<chapter id="03">L’Est de la Forêt et le Château</chapter>
-<p>Après un long chemin, vous apercevez finalement une lueur au loin. La végétation se fait moins dense, et vous arrivez dans une clairière où se dresse un château imposant, presque en ruines. Les murs de pierres sont couverts de lichen, et les fenêtres brisées semblent observer vos moindres faits et gestes.</p>
-<p>Le vent souffle fort, apportant un frisson glacé. Vous avancez prudemment vers la porte principale, qui grince lorsqu’elle s’ouvre sous vos doigts. À l’intérieur, l’air est lourd et poussiéreux, mais vous sentez qu’un étrange pouvoir émane de ce lieu.</p>
-<p>Dans une salle sombre, vous apercevez un éclat de lumière. Vous vous approchez prudemment, mais le château semble se refermer sur vous.</p>
-<choice idref="06">Explorer l’intérieur du château, à la recherche de l’artefact. <a>Chapitre 6</a></choice>
-<choice idref="09">Chercher à ouvrir la porte du château pour sortir de ce lieu maudit. <a>Chapitre 9</a></choice>
-
-<chapter id="04">Au Nord de la Forêt</chapter>
-<p>Le vent du nord est glacial, et le ciel s’assombrit rapidement. Vous suivez un chemin étroit bordé de rochers escarpés, jusqu'à ce que vous atteigniez une crête où la vue est magnifique. La vallée en contrebas s’étend, serpentée par une rivière cristalline. Cependant, l’instabilité du sol rend chaque pas incertain.</p>
-<p>Une soudaine bourrasque vous fait trébucher. Vous perdez l’équilibre et, en une fraction de seconde, vous êtes projeté dans le vide. Le vent hurle à vos oreilles, et la chute est rapide. Vous heurtez les rochers sur le chemin avant de vous écraser dans la vallée. </p>
-<choice idref="09">Vous êtes inconscient. <a>Chapitre 9</a></choice>
-
-<chapter id="05">Le Retour au Point de Départ</chapter>
-<p>Vous reprenez conscience, mais tout semble déformé. Les arbres, les rochers, tout semble revenir à son point de départ. Vous marchez sans but, jusqu’à ce que vous réalisiez que la forêt se referme encore sur vous. Le vent qui souffle ici semble plus fort, plus oppressant, et vous vous trouvez de nouveau sur le même chemin.</p>
-<p>Cela vous semble une éternité depuis que vous avez quitté Grinheim. La forêt vous piège dans un cycle sans fin. Vous vous sentez perdu, sans espoir.</p>
-<choice idref="02">Continuer à avancer, espérant que le chemin finira par s’ouvrir. <a>Chapitre 2</a></choice>
-
-<chapter id="06">Le Château et le Monstre</chapter>
-<p>Vous pénétrez plus profondément dans le château, la lumière de votre torche projetant des ombres inquiétantes sur les murs. Une lourde porte en fer se trouve devant vous, et à l’intérieur, vous apercevez une silhouette massive : un monstre fait de chair et de pierre, ses yeux brillants comme des gemmes.</p>
-<p>Il garde l’accès à une salle secrète, sans doute celle qui abrite le Collier aux Sept Pierres. Vous êtes seul face à lui, et le combat semble inévitable. Le monstre rugit, faisant trembler les murs du château.</p>
-<choice idref="07">Affronter le monstre, espérant que vos compétences de combattant suffiront à le vaincre. <a>Chapitre 7</a></choice>
-<choice idref="08">Chercher un moyen de contourner le monstre et d’accéder à la salle secrète sans le combattre. <a>Chapitre 8</a></choice>
-
-<chapter id="07">Le Combat avec le Monstre</chapter>
-<p>Vous engagez le combat contre la créature, frappant de toute votre force. Mais la peau de pierre du monstre est presque imperméable. Ses attaques sont puissantes, et chaque coup vous fait chanceler. Une vague de magie noire vous submerge et vous n’avez aucune chance de vous en sortir.</p>
-<choice idref="09">Vous vous effondrez, victime de cette créature terrifiante.  <a>Chapitre 9</a></choice>
-
-<chapter id="08">Le Collier aux Sept Pierres</chapter>
-<p>Vous décidez de ne pas affronter directement le monstre, mais d’utiliser votre intelligence pour contourner le danger. Vous réussissez à atteindre la salle secrète et là, sur un piédestal de marbre, repose le Collier aux Sept Pierres. Une lumière douce émane de lui, et, sans hésiter, vous le saisissez.</p>
-<p>Le monstre, inerte, ne semble plus pouvoir vous nuire. Vous avez gagné. Vous prenez le collier et vous vous sentez empli d’un pouvoir immense.</p>
-<choice idref="10">Vous prenez le collier, empli d’un pouvoir immense. <a>Chapitre 10</a></choice>
-
-<chapter id="09">La Mort de l'Aventurier</chapter>
-<p>Quoi que vous ayez choisi, votre aventure se termine tragiquement ici. La forêt, le château et ses secrets ont eu raison de vous. Dans l’ombre de ces lieux, votre histoire prend fin. Grinheim attendra un sauveur, mais ce ne sera pas vous.</p>
-
-<chapter id="10">Le Collier aux Sept Pierres</chapter>
-<p>Vous avez trouvé ce que vous cherchiez. Le Collier aux Sept Pierres brille dans vos mains, et avec lui, vous sentez que la malédiction qui pèse sur Grinheim va enfin être levée. Votre mission est accomplie. Vous n’êtes plus simplement un aventurier, mais un héros qui revient avec le pouvoir de sauver son village.</p>
-
 <chapter id="00">Prologue</chapter>
-<p>Dans ce livre, vous allez incarner Florian, un jeune Hyjnärr, une des tribus Vikings de Dyonie, un archipel d'îles verdoyantes campés au coeur de la Mer de Lossýn. Son peuple vit de leurs raids sur le continent, où d'étend le puissant royaume d'Eyrmös, et vit en symbiose avec les Drekí Wødr, ces dragons d'eau majestueux, aux multiples talents et formes. Les tribus Vikings s'en servent comme montures pour parcourir les océans et faire la guerre.</p>
-<p>Un jour, Himilcar, roi d'Eyrmös, décide de partir en guerre contre ces barbares qui ravagent ses côtes. Une première armada fût envoyée, mais fût écrasée par les Vikingset leurs Drekí Wødr. Sûrs de leur force, les vainqueursont négligés la ténacité d'Himilcar, qui renvoya bien vite une deuxième expédition. Les vikings se fofnt surprendre; et, bien que s'étant bien battus, en occasionnant de lourds dégats à la flotte ennemie, ils sont battusâr le nombre trop important des troupes d'Himilcar.</p>
-<p>Nous voici au lendemain de ce combat désastreux. Les vikings savent qu'une troisième expédition sera bientôt envoyée pour les achever, ils doivent donc trouver un moyen de vaincre : le prochain combat sera un triomphe eclatant ou une catastrophe sanglante.</p>
-<p>Florian, encore jeune, doit passer sa tradiotionnelle quête d'initiation de guerrier. Il décide que l'objet de cette dernière sera la découverte d'un moyen de repousser les envahisseurs d'Eyrmös.</p>
+<p>Dans ce livre, vous allez incarner Florian, un jeune Hyjnärr, une des tribus Vikings de Dyonie, un archipel d'îles verdoyantes campés au cœur de la Mer de Lossýn. </p>
+<p>Son peuple vit de leurs raids sur le continent, où d'étend le puissant royaume d'Eyrmös, et vit en symbiose avec les Drekí Wødr, ces dragons d'eau majestueux, aux multiples talents et formes. Les tribus Vikings s'en servent comme montures pour parcourir les océans et faire la guerre. </p>
+<p>Un jour, Himilcar, roi d'Eyrmös, décide de partir en guerre contre ces barbares qui ravagent ses côtes. Une première armada fût envoyée, mais fût écrasée par les Vikingset leurs Drekí Wødr. </p>
+<p>Sûrs de leur force, les vainqueurs sont négligés la ténacité d'Himilcar, qui renvoya bien vite une deuxième expédition. Les vikings se font surprendre ; et, bien que s'étant bien battus, en occasionnant de lourds dégâts à la flotte ennemie, ils sont battus par le nombre trop important des troupes d'Himilcar. </p>
+<p>Nous voici au lendemain de ce combat désastreux. Les vikings savent qu'une troisième expédition sera bientôt envoyée pour les achever, ils doivent donc trouver un moyen de vaincre : le prochain combat sera un triomphe éclatant ou une catastrophe sanglante. </p>
+<p>Florian, encore jeune, doit passer sa traditionnelle quête d'initiation de guerrier. Il décide que l'objet de cette dernière sera la découverte d'un moyen de repousser les envahisseurs d'Eyrmös.</p>
 <choice idref="01">Débuter l'histoire. <a>Chapitre 1</a></choice>
+
+<chapter id="01">Le camp d’entraînement</chapter>
+<p>Florian arrive sur le camp d’entraînement, il y’a beaucoup de monde, tous les hommes en âge de combattre. </p>
+<p>Cependant, en regardant bien, il croise le regard d’une jeune femme, entouré d’hommes ricanant, se moquant de la présence d’une femme. Florian trouve cela injuste mais hésite à intervenir : </p>
+<choice idref="02"> Aller la défendre, quitte à se mettre des gens à dos <a> chapitre 2 </a></choice>
+<choice idref="03"> Ne rien fairec <a> chapitre 3 </a></choice>
+
+<chapter id="02">La rencontre</chapter>
+<p>Gabriel dissuade les autres vikings d’arrêter d’harceler cette jeune fille car ce n’est moralement pas correct et indigne de leur part. </p>
+<p>Une grande partie des futurs combattants l’admettent mais d’autres l’insultent en partant. La jeune fille se présente et le remercie pour l’aide de Florian. </p>
+<p> Ils commencent à faire connaissance, elle semble être une jeune fille très intelligente. Anaïs présente un autre ami qui s’appelle Gabriel, c’est un jeune homme discret et réservé mais qui semble tout aussi gentil. <p>
+<choice idref="04"> Leur entraineur s’approche et se présente aux futurs guerriers <a> chapitre 4 </a></choice>
+
+<chapter id="03">La rencontre</chapter>
+<p>Florian décide de ne pas aller aider la jeune fille (Florian préfère ne pas s’interposer afin d’éviter d’aggraver la situation). </p>
+<p>Cependant, une autre personne attire son attention : un jeune homme grand, avec un regard plongé dans le vide. Leur regard se croise et cet inconnu décide alors de l’approcher.   </p>
+<p> Il se présente, il s’appelle Gabriel, il a été recruté de force car personne ne peut le battre lorsqu’il s’agit d’user de la stratégie. Florian est assez impressionné. </p>
+<p> Gabriel avoue alors que la jeune fille se retrouvant en ce moment entouré d’homme est une amie à lui. A eux deux, ils décident alors d’aller la voir et ils se mettent tous les trois à parler. Tout va pour le mieux. </p>
+<choice idref="04"> Leur entraineur s’approche et se présente aux futurs guerriers <a> chapitre 4 </a></choice>
+
+<chapter id="04">L’intrépide entraîneur</chapter>
+<p>Un entraîneur se présente, il s’appelle Noam et, c’est un grand guerrier reconnu de tous malgré sa froideur et son égocentrisme, ce qui fait de lui un homme détestable. </p>
+<p>Ce camp commence déjà mal, Noam vient vers moi et me demande de me présenter, son regard est rempli de mépris, je n’ai pas envie de me soumettre à cet homme : </p>
+<choice idref="05">Je fournis un effort et je me présente de manière correcte <a> Chapitre 5</a> </choice>
+<choice idref="06"> Je lui rends la pareille et je me présente irrespectueusement <a> Chapitre 6</a> </choice>
+
+<chapter id="05">L’installation</chapter>
+<a>Tout s’est bien passé, je pars m’installer dans les chambres communes avec Anaïs et Gabriel, c’est le début d’une grande aventure.  </a>
+<choice idref="08"> Commencer l’entraînement <a> Chapitre 8</a> </choice>
+
+<chapter id="06">Punition et regret </chapter>
+<a>Je crois que je n’aurai jamais dû me présenter de cette manière, dès le premier jour, je me retrouve déjà à être punis...à nettoyer les toilettes. </a>
+<a>Au moins, je ne suis pas seul : un autre groupe est à l’autre bout de la pièce, ils ne m’ont pas l’air très sympathique mais je peux quand même tenter de faire connaissance. </a>
+<choice idref="07"> Je vais les voir <a> Chapitre 7 </a></choice>
+<choice idref="05">Je finis ma corvée seule dans mon coin pour en finir le plus vite <a> Chapitre 5 </a></choice>
+
+<chapter id="07">Wasted</chapter>
+J’aurai dû me fier à mon instinct, ce groupe incarne le mal et la malveillance, je suis en train de me faire battre par 4 personnes, je ne peux rien faire. 
+Florian succombe de ses blessures, vous êtes mort. 
+<choice idref="01"> Wasted, retour au chapitre 1<a> Chapitre 1 </a></choice>
+
+<chapter id="08"> Début de l’entraînement </chapter>
+Le lendemain de notre installation, l’entraînement commence, c’est dur mais nous arrivons à nous pousser vers le haut. Nous nous entrainons sur trois aspects différents : renforcement mental, renforcement physique et les stratégies de défense.
+<choice idref="09"> Débuter l’entraînement <a> Chapitre 9 </a></choice>
+
+<chapter id="09"> Faites les bons choix </chapter>
+<form>
+<div class="question1">
+<p>Question 1 : Un camarade s’effondre d’épuisement pendant l’entraînement. Que fais-tu ?</p>
+<input type="radio" id="q1r1" name="question1">
+<label for="q1r1">Tu t’arrêtes pour l’aider et l’encourager à continuer.</label><br />
+<input type="radio" id="q1r2" name="question1">
+<label for="q1r2">Tu cries aux autres de le porter jusqu’au camp et reprends l'entraînement.</label><br />
+<input type="radio" id="q1r3" name="question1">
+<label for="q1r3">Tu le motives en courant à ses côtés jusqu’à la fin.</label><br />
+</div>
+<div class="question2">
+<p>Question 2 : Lors d’un exercice de résistance au froid, tu es gelé jusqu’aux os. Que fais-tu ?</p>
+<input type="radio" id="q2r1" name="question2">
+<label for="q2r1">Tu t’arrêtes pour l’aider et l’encourager à continuer.</label><br />
+<input type="radio" id="q2r2" name="question2">
+<label for="q2r2">Tu cries aux autres de le porter jusqu’au camp et reprends l'entraînement.</label><br />
+<input type="radio" id="q2r3" name="question2">
+<label for="q2r3">Tu le motives en courant à ses côtés jusqu’à la fin.</label><br />
+</div>
+<div class="question3">
+<p>Question 3 : On te confie la direction d’une simulation d’attaque surprise. Que fais-tu ?</p>
+<input type="radio" id="q3r1" name="question3">
+<label for="q3r1">Tu organises une embuscade nocturne.</label><br />
+<input type="radio" id="q3r2" name="question3">
+<label for="q3r2">Tu consultes le groupe avant de choisir un plan.</label><br />
+<input type="radio" id="q3r3" name="question3">
+<label for="q3r3">Tu attaques frontalement pour tester les réflexes de l’équipe.</label><br />
+</div>
+<div class="question4">
+<p>Question 4 : Tu dois franchir une falaise abrupte pendant l’entraînement. Que fais-tu ?</p>
+<input type="radio" id="q4r1" name="question4">
+<label for="q4r1">Tu grimpes calmement, concentré sur chaque prise.</label><br />
+<input type="radio" id="q4r2" name="question4">
+<label for="q4r2">Tu grimpes vite et sans hésitation pour impressionner les autres.</label><br />
+<input type="radio" id="q4r3" name="question4">
+<label for="q4r3">Tu aides les autres à grimper en jetant une corde.</label><br />
+</div>
+</form>
+<choice idref="10"> Continuer paisiblement votre vie <a>Chapitre 10</a></choice>
+
+<chapter id="10"> Le Jugement de Dyonie </chapter>
+<p>L’heure est venue. </p>
+<p> Sur la plage battue par les vents, les Vikings se tiennent prêts. À leurs côtés, les majestueux Drekí Wødr grondent. </p>
+<p>Toi et tes alliés, Anaïs et Gabriel, avez découvert l’existence d’un général monstrueux, né d’un rituel interdit : Agh’Zarr le Fléau, une abomination mi-homme mi-bête, contrôlée par Himilcar lui-même. </p>
+<p>Il n’est plus temps de fuir. Tu vas l’affronter. </p>
+<p>Noam crie :
+ « ALLEZ LES ENFANTS ! MONTREZ-LUI COMMENT ON DÉCAPITE LES LÉGENDES ! » </p>
+<p>Anaïs pose une main sur ton épaule. Gabriel t’adresse un regard silencieux. </p>
+<p>Tu inspires. Tu es prêt. </p>
+<choice idref="11"> Partir au combat <a>Chapitre 11</a></choice>
+
+<chapter id="11">Premier contact</chapter>
+<form>
+<p>Agh'Zarr bondit vers toi avec une vitesse inhumaine.</p>
+<input type="radio" id="t1r1" name="tour1">
+<label for="t1r1">Attaque frontale, tu hurles en visant sa poitrine.</label><br />
+<input type="radio" id="t1r2" name="tour1">
+<label for="t1r2">Tu esquives et contre-attaques.</label><br />
+<input type="radio" id="t1r3" name="tour1">
+<label for="t1r3">Tu relies ton attaque avec celle d’Anaïs et Gabriel.</label><br />
+</form>
+<choice idref="12"> Utiliser cette méthode <a>Chapitre 12</a></choice>
+
+<chapter id="12">La rage d'Agh'Zarr</chapter>
+<form>
+<p>Il frappe le sol et déclenche une onde de choc. Tes alliés sont projetés en arrière.</p>
+<input type="radio" id="t2r1" name="tour2">
+<label for="t2r1">Tu entres en rage et fonces tête baissée.</label><br />
+<input type="radio" id="t2r2" name="tour2">
+<label for="t2r2">Tu lèves ton bouclier, prêt à encaisser.</label><br />
+<input type="radio" id="t2r3" name="tour2">
+<label for="t2r3">Tu feintes une chute pour l’attirer et frapper quand il baisse sa garde.</label><br />
+</form>
+<choice idref="13"> Utiliser cette méthode <a>Chapitre 13</a></choice>
+
+<chapter id="13">L'assault final</chapter>
+<form>
+<p>Agh’Zarr est blessé, titubant… mais sa haine grandit. C’est le dernier coup.</p>
+<input type="radio" id="t3r1" name="tour3">
+<label for="t3r1">Tu attaques à pleine puissance.</label><br />
+<input type="radio" id="t3r2" name="tour3">
+<label for="t3r2">Gabriel place un piège avec Anaïs, tu l’y attires</label><br />
+<input type="radio" id="t3r3" name="tour3">
+<label for="t3r3">Tu te sacrifies pour une ouverture à Anaïs.</label><br />
+</form>

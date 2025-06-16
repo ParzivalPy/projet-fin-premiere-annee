@@ -3,7 +3,6 @@
 #include <string.h>
 #include <sys/stat.h>  // Pour mkdir
 #include <sys/types.h> // Pour les permissions
-#include "template.h"  //Pour le fichier des template
 
 #define MAX_LINE 2048
 #define MAX_ID 32
@@ -58,7 +57,7 @@ int main()
                 FILE *out = fopen(filename, "w");
                 if (out)
                 {
-                    fprintf(out, "<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n<meta charset=\"UTF-8\">\n<title>%s</title>\n</head>\n<body>\n<h1>%s</h1>\n%s\n</body>\n</html>\n", title, title, content);
+                    fprintf(out, "<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n<meta charset=\"UTF-8\">\n<title>%s</title>\n</head>\n<body>\n<h1>Flamme du Nord</h1>\n<h2>%s</h2>\n%s\n</body>\n</html>\n", title, title, content);
                     fclose(out);
                 }
                 content[0] = '\0'; // Réinitialiser le contenu pour le prochain chapitre
@@ -76,7 +75,7 @@ int main()
         {
             sscanf(line, "<choice idref=\"%[^\"]\">%[^<]<", id_choice, title);
             char choice_html[512];
-            snprintf(choice_html, sizeof(choice_html), "<choice idref=\"%s\">%s<a href=\"%s.html\">Chapitre %s</a></choice><br />", id_choice, title, id_choice, id_choice);
+            snprintf(choice_html, sizeof(choice_html), "<br /><choice idref=\"%s\">%s<a href=\"%s.html\">Chapitre %s</a></choice>", id_choice, title, id_choice, id_choice);
             strcat(content, choice_html);
         }
         else
@@ -96,7 +95,7 @@ int main()
         FILE *out = fopen(filename, "w");
         if (out)
         {
-            fprintf(out, "<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n<meta charset=\"UTF-8\">\n<title>%s</title>\n</head>\n<body>\n<h1>%s</h1>\n%s\n</body>\n</html>\n", title, title, content);
+            fprintf(out, "<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n<meta charset=\"UTF-8\">\n<title>%s</title>\n</head>\n<body>\n<h1>Flamme du Nord</h1>\n<h2>%s</h2>\n%s\n</body>\n</html>\n", title, title, content);
             fclose(out);
         }
     }
