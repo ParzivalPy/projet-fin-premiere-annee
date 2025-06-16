@@ -11,7 +11,7 @@
 <p>Florian arrive sur le camp d’entraînement, il y’a beaucoup de monde, tous les hommes en âge de combattre. </p>
 <p>Cependant, en regardant bien, il croise le regard d’une jeune femme, entouré d’hommes ricanant, se moquant de la présence d’une femme. Florian trouve cela injuste mais hésite à intervenir : </p>
 <choice idref="02"> Aller la défendre, quitte à se mettre des gens à dos <a> chapitre 2 </a></choice>
-<choice idref="03"> Ne rien fairec <a> chapitre 3 </a></choice>
+<choice idref="03"> Ne rien faire <a> chapitre 3 </a></choice>
 
 <chapter id="02">La rencontre</chapter>
 <p>Gabriel dissuade les autres vikings d’arrêter d’harceler cette jeune fille car ce n’est moralement pas correct et indigne de leur part. </p>

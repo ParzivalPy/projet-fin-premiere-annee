@@ -57,7 +57,7 @@ int main()
                 FILE *out = fopen(filename, "w");
                 if (out)
                 {
-                    fprintf(out, "<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n<meta charset=\"UTF-8\">\n<title>%s</title>\n</head>\n<body>\n<h1>Flamme du Nord</h1>\n<h2>%s</h2>\n%s\n</body>\n</html>\n", title, title, content);
+                    fprintf(out, "<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n<meta charset=\"UTF-8\">\n<title>%s</title>\n<link rel=\"stylesheet\" href=\"../histoire.css\">\n</head>\n<body>\n<h1> <img src=\"../ASSETS/img/casque.png\">Flamme du Nord <img src=\"../ASSETS/img/casque.png\"></h1>\n<div class=\"background-opacity\"></div>\n<h2>%s</h2>\n%s\n</body>\n</html>\n", title, title, content);
                     fclose(out);
                 }
                 content[0] = '\0'; // Réinitialiser le contenu pour le prochain chapitre
@@ -95,7 +95,7 @@ int main()
         FILE *out = fopen(filename, "w");
         if (out)
         {
-            fprintf(out, "<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n<meta charset=\"UTF-8\">\n<title>%s</title>\n</head>\n<body>\n<h1>Flamme du Nord</h1>\n<h2>%s</h2>\n%s\n</body>\n</html>\n", title, title, content);
+            fprintf(out, "<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n<meta charset=\"UTF-8\">\n<title>%s</title>\n<link rel=\"stylesheet\" href=\"../histoire.css\">\n</head>\n<body>\n<h1><img src=\"../ASSETS/img/casque.png\"> Flamme du Nord <img src=\"../ASSETS/img/casque.png\"></h1>\n<div class=\"background-opacity\"></div>\n<h2>%s</h2>\n%s\n</body>\n</html>\n", title, title, content);
             fclose(out);
         }
     }
