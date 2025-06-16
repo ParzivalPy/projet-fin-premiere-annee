@@ -1,38 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Italiana&family=Marko+One&family=Parkinsans:wght@300..800&family=Uncial+Antiqua&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Italiana&family=Marko+One&family=Parkinsans:wght@300..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Italiana&family=Marko+One&family=Parkinsans:wght@300..800&family=Uncial+Antiqua&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Italiana&family=Marko+One&family=Parkinsans:wght@300..800&display=swap");
 body {
   color: #a5a19b; /* couleur parchemin clair */
+  height: 100vh;
+  width: 100%;
   font-family: "Cinzel Decorative", serif; /* police avec vibe antique/viking */
   line-height: 1.6;
   margin: 0;
   padding: 0;
   background-image: url("./ASSETS/img/falaise2.jpg"); /* Remplace avec ton chemin */
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
-
 h1 {
-    font-family: 'Uncial Antiqua', serif; 
-    color: #eae0c8; 
-    text-align: center;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    background-color: #2e2e2e;
-    padding: 1.5rem 1rem;
-    margin: 0;
-    border-bottom: 5px solid #888;
-    text-shadow: 2px 2px 0 #000, 0 0 5px #111;
-  }
+  font-family: "Uncial Antiqua", serif;
+  color: #eae0c8;
+  text-align: center;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #2e2e2e;
+  padding: 1.5rem 1rem;
+  margin: 0;
+  border-bottom: 5px solid #888;
+  text-shadow: 2px 2px 0 #000, 0 0 5px #111;
+}
 
 h2 {
   text-align: center;
 }
 
-p, choice {
+p,
+choice {
   text-align: justify;
   margin: 0 50px;
 }
@@ -48,21 +51,21 @@ p, choice {
 }
 
 .story-container {
-    max-width: 800px;
-    margin: 3rem auto;
-    padding: 2rem;
-    background-color: rgba(255, 255, 255, 0.8); /* blanc translucide */
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
-    border-radius: 10px;
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.8); /* blanc translucide */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
 }
 
-img{
+img {
   width: 80px;
   aspect-ratio: 575/434;
 }
 
-a{
+a {
   color: #eae0c8; /* couleur parchemin clair */
   text-decoration: none;
-  font-weight: bold; 
+  font-weight: bold;
 }
