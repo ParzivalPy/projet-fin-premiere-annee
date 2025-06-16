@@ -49,3 +49,10 @@
 
 <chapter id="10">Le Collier aux Sept Pierres</chapter>
 <p>Vous avez trouvé ce que vous cherchiez. Le Collier aux Sept Pierres brille dans vos mains, et avec lui, vous sentez que la malédiction qui pèse sur Grinheim va enfin être levée. Votre mission est accomplie. Vous n’êtes plus simplement un aventurier, mais un héros qui revient avec le pouvoir de sauver son village.</p>
+
+<chapter id="00">Prologue</chapter>
+<p>Dans ce livre, vous allez incarner Florian, un jeune Hyjnärr, une des tribus Vikings de Dyonie, un archipel d'îles verdoyantes campés au coeur de la Mer de Lossýn. Son peuple vit de leurs raids sur le continent, où d'étend le puissant royaume d'Eyrmös, et vit en symbiose avec les Drekí Wødr, ces dragons d'eau majestueux, aux multiples talents et formes. Les tribus Vikings s'en servent comme montures pour parcourir les océans et faire la guerre.</p>
+<p>Un jour, Himilcar, roi d'Eyrmös, décide de partir en guerre contre ces barbares qui ravagent ses côtes. Une première armada fût envoyée, mais fût écrasée par les Vikingset leurs Drekí Wødr. Sûrs de leur force, les vainqueursont négligés la ténacité d'Himilcar, qui renvoya bien vite une deuxième expédition. Les vikings se fofnt surprendre; et, bien que s'étant bien battus, en occasionnant de lourds dégats à la flotte ennemie, ils sont battusâr le nombre trop important des troupes d'Himilcar.</p>
+<p>Nous voici au lendemain de ce combat désastreux. Les vikings savent qu'une troisième expédition sera bientôt envoyée pour les achever, ils doivent donc trouver un moyen de vaincre : le prochain combat sera un triomphe eclatant ou une catastrophe sanglante.</p>
+<p>Florian, encore jeune, doit passer sa tradiotionnelle quête d'initiation de guerrier. Il décide que l'objet de cette dernière sera la découverte d'un moyen de repousser les envahisseurs d'Eyrmös.</p>
+<choice idref="01">Débuter l'histoire. <a>Chapitre 1</a></choice>
