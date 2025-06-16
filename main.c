@@ -53,7 +53,6 @@ int main()
                 char filename[256];
                 snprintf(filename, sizeof(filename), "%s%s.html", output_dir, id); // Inclure le chemin
 
-                printf("content chapter: %s\n", content); // Afficher le contenu du chapitre pour vérification
                 // printf("Content of chapter %s: %s\n", id, content); // Afficher le contenu du chapitre
                 FILE *out = fopen(filename, "w");
                 if (out)

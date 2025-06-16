@@ -90,7 +90,7 @@ Le lendemain de notre installation, l’entraînement commence, c’est dur mais
 <label for="q4r3">Tu aides les autres à grimper en jetant une corde.</label><br />
 </div>
 </form>
-<choice idref="10"> Continuer paisiblement votre vie <a>Chapitre 10</a></choice>
+<choice idref="10">Continuer paisiblement votre vie <button id="validate-training">Chapitre 10</button></choice>
 
 <chapter id="10"> Le Jugement de Dyonie </chapter>
 <p>L’heure est venue. </p>

@@ -3,7 +3,26 @@ let defense = 0;
 let strategy = 0;
 let health = 100;
 
+if (sessionStorage.getItem("attack")) {
+  attack = parseInt(sessionStorage.getItem("attack"));
+}
+if (sessionStorage.getItem("defense")) {
+  defense = parseInt(sessionStorage.getItem("defense"));
+}
+if (sessionStorage.getItem("strategy")) {
+  strategy = parseInt(sessionStorage.getItem("strategy"));
+}
+
+console.log("Initial Stats:");
+console.log("Attack:", attack);
+console.log("Defense:", defense);
+console.log("Strategy:", strategy);
+
 function updateStats() {
+  attack = 0;
+  defense = 0;
+  strategy = 0;
+
   let question1 = document.querySelector('input[name="question1"]:checked').id;
   if (question1 === "q1r1") {
     attack += 5;
@@ -71,6 +90,14 @@ function updateStats() {
   } else {
     console.error("Invalid answer for question 4");
   }
+
+  sessionStorage.setItem("attack", attack);
+  sessionStorage.setItem("defense", defense);
+  sessionStorage.setItem("strategy", strategy);
 }
 
-updateStats();
+document
+  .getElementsByTagName("a")[0]
+  .addEventListener("click", function (event) {
+    updateStats();
+  });
