@@ -65,11 +65,11 @@ Le lendemain de notre installation, l’entraînement commence, c’est dur mais
 <div class="question2">
 <p>Question 2 : Lors d’un exercice de résistance au froid, tu es gelé jusqu’aux os. Que fais-tu ?</p>
 <input type="radio" id="q2r1" name="question2">
-<label for="q2r1">Tu t’arrêtes pour l’aider et l’encourager à continuer.</label><br />
+<label for="q2r1">Tu te concentres pour ignorer la douleur et rester en place.</label><br />
 <input type="radio" id="q2r2" name="question2">
-<label for="q2r2">Tu cries aux autres de le porter jusqu’au camp et reprends l'entraînement.</label><br />
+<label for="q2r2">Tu cries pour te réchauffer et continues l’épreuve.</label><br />
 <input type="radio" id="q2r3" name="question2">
-<label for="q2r3">Tu le motives en courant à ses côtés jusqu’à la fin.</label><br />
+<label for="q2r3">Tu proposes au groupe de se regrouper pour mieux résister.</label><br />
 </div>
 <div class="question3">
 <p>Question 3 : On te confie la direction d’une simulation d’attaque surprise. Que fais-tu ?</p>
