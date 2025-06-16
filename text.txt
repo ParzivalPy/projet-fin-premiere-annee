@@ -33,22 +33,22 @@
 <choice idref="06"> Je lui rends la pareille et je me présente irrespectueusement <a> Chapitre 6</a> </choice>
 
 <chapter id="05">L’installation</chapter>
-<a>Tout s’est bien passé, je pars m’installer dans les chambres communes avec Anaïs et Gabriel, c’est le début d’une grande aventure.  </a>
+<p>Tout s’est bien passé, je pars m’installer dans les chambres communes avec Anaïs et Gabriel, c’est le début d’une grande aventure.  </p>
 <choice idref="08"> Commencer l’entraînement <a> Chapitre 8</a> </choice>
 
 <chapter id="06">Punition et regret </chapter>
-<a>Je crois que je n’aurai jamais dû me présenter de cette manière, dès le premier jour, je me retrouve déjà à être punis...à nettoyer les toilettes. </a>
-<a>Au moins, je ne suis pas seul : un autre groupe est à l’autre bout de la pièce, ils ne m’ont pas l’air très sympathique mais je peux quand même tenter de faire connaissance. </a>
+<p>Je crois que je n’aurai jamais dû me présenter de cette manière, dès le premier jour, je me retrouve déjà à être punis...à nettoyer les toilettes. </p>
+<p>Au moins, je ne suis pas seul : un autre groupe est à l’autre bout de la pièce, ils ne m’ont pas l’air très sympathique mais je peux quand même tenter de faire connaissance. </p>
 <choice idref="07"> Je vais les voir <a> Chapitre 7 </a></choice>
 <choice idref="05">Je finis ma corvée seule dans mon coin pour en finir le plus vite <a> Chapitre 5 </a></choice>
 
 <chapter id="07">Wasted</chapter>
-J’aurai dû me fier à mon instinct, ce groupe incarne le mal et la malveillance, je suis en train de me faire battre par 4 personnes, je ne peux rien faire. 
-Florian succombe de ses blessures, vous êtes mort. 
+<p>J’aurai dû me fier à mon instinct, ce groupe incarne le mal et la malveillance, je suis en train de me faire battre par 4 personnes, je ne peux rien faire. </p>
+<p>Florian succombe de ses blessures, vous êtes mort. </p>
 <choice idref="01"> Wasted, retour au chapitre 1<a> Chapitre 1 </a></choice>
 
 <chapter id="08"> Début de l’entraînement </chapter>
-Le lendemain de notre installation, l’entraînement commence, c’est dur mais nous arrivons à nous pousser vers le haut. Nous nous entrainons sur trois aspects différents : renforcement mental, renforcement physique et les stratégies de défense.
+<p>Le lendemain de notre installation, l’entraînement commence, c’est dur mais nous arrivons à nous pousser vers le haut. Nous nous entrainons sur trois aspects différents : renforcement mental, renforcement physique et les stratégies de défense.</p>
 <choice idref="09"> Débuter l’entraînement <a> Chapitre 9 </a></choice>
 
 <chapter id="09"> Faites les bons choix </chapter>

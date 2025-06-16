@@ -37,7 +37,7 @@ h2 {
 p,
 choice{
   text-align: justify;
-  margin: 0 50px;
+  margin: 7px 50px;
 }
 
 input {
@@ -45,7 +45,7 @@ input {
 }
 
 form p {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .background-opacity {

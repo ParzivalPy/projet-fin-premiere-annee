@@ -23,6 +23,16 @@ function updateStats() {
   defense = 0;
   strategy = 0;
 
+  if (sessionStorage.getItem("attack")) {
+    sessionStorage.removeItem("attack");
+  }
+  if (sessionStorage.getItem("defense")) {
+    sessionStorage.removeItem("defense");
+  }
+  if (sessionStorage.getItem("strategy")) {
+    sessionStorage.removeItem("strategy");
+  }
+
   let question1 = document.querySelector('input[name="question1"]:checked').id;
   if (question1 === "q1r1") {
     attack += 5;
@@ -36,8 +46,6 @@ function updateStats() {
     attack += 15;
     defense += 5;
     strategy += 10;
-  } else {
-    console.error("Invalid answer for question 1");
   }
 
   let question2 = document.querySelector('input[name="question2"]:checked').id;
@@ -53,8 +61,6 @@ function updateStats() {
     attack += 5;
     defense += 10;
     strategy += 15;
-  } else {
-    console.error("Invalid answer for question 2");
   }
 
   let question3 = document.querySelector('input[name="question3"]:checked').id;
@@ -70,8 +76,6 @@ function updateStats() {
     attack += 20;
     defense += 5;
     strategy += 5;
-  } else {
-    console.error("Invalid answer for question 3");
   }
 
   let question4 = document.querySelector('input[name="question4"]:checked').id;
@@ -87,9 +91,12 @@ function updateStats() {
     attack += 5;
     defense += 10;
     strategy += 15;
-  } else {
-    console.error("Invalid answer for question 4");
   }
+
+  console.log("Final Stats:");
+  console.log("Attack:", attack);
+  console.log("Defense:", defense);
+  console.log("Strategy:", strategy);
 
   sessionStorage.setItem("attack", attack);
   sessionStorage.setItem("defense", defense);
