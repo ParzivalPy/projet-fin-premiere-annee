@@ -88,6 +88,7 @@
 <input type="radio" id="q4r2" name="question4">
 <label for="q4r2">Tu grimpes vite et sans hésitation pour impressionner les autres.</label><br />
 <input type="radio" id="q4r3" name="question4">
+<label for="q4r3">Tu aides les autres à grimper en jetant une corde.</label>
 </div>
 </form>
 <choice idref="10">Continuer paisiblement votre vie <button id="validate-training">Chapitre 10</button></choice>
