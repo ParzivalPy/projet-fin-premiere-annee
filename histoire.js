@@ -97,6 +97,7 @@ function updateStats() {
     strategy += 15;
   }
 
+  defense = parseInt(defense) / 2;
   strategy = parseInt(strategy) / 2 / 100 + 1;
   sessionStorage.setItem("attack", attack);
   sessionStorage.setItem("defense", defense);
@@ -104,8 +105,8 @@ function updateStats() {
 }
 
 function enemyAttackFunction() {
-  let enemyAttackValue = Math.floor(Math.random() * enemyAttack) + 1;
-  let enemyDefenseValue = Math.floor(Math.random() * enemyDefense) + 1;
+  let enemyAttackValue = Math.floor(Math.random() * (enemyAttack - 25)) + 25;
+  let enemyDefenseValue = Math.floor(Math.random() * (enemyDefense - 15)) + 10;
   return {
     attack_enemy: enemyAttackValue,
     defense_enemy: enemyDefenseValue,
@@ -114,21 +115,26 @@ function enemyAttackFunction() {
 
 function fight() {
   // boucle de combat
-  if (health > 0 && enemyHealth > 0) {
-    let fight_choose = document.querySelector('input[name="tour"]:checked');
+  if (sessionStorage.getItem("player-life") > 0 && sessionStorage.getItem("enemy-life") > 0) {
+    console.log("Ca, execute");
+    let fight_choose = document.querySelector('input[name="tour"]:checked').id;
     if (fight_choose == "t1r1") {
       enemy = enemyAttackFunction();
       let attack_enemy = enemy.attack_enemy;
       let defense_enemy = enemy.defense_enemy;
-      if (attack_enemy - defense * strategy > 0) {
-        health -= attack_enemy - defense * strategy;
+      if (attack_enemy - defense > 0) {
+        health_fight = sessionStorage.getItem("player-life") - attack_enemy - defense;
+        console.log("Enemy attack:", attack_enemy - defense);
       }
-      if (attack * strategy - defense_enemy > 0) {
-        enemyHealth -= (attack + 20) * strategy - defense_enemy;
+      if ((attack + 20) * strategy - defense_enemy > 0) {
+        enemyHealth_fight = sessionStorage.getItem("enemy-life") - (attack + 20) * strategy - defense_enemy;
+        console.log("Player attack:", (attack + 20) * strategy - defense_enemy);
       }
     }
-    sessionStorage.setItem("player-life", health);
+    sessionStorage.setItem("player-life", health_fight);
     sessionStorage.setItem("enemy-life", enemyHealth);
+    window.location.href = "11.html";
+    return;
   } else if (health <= 0) {
     window.location.href = "12.html";
   } else if (health < 30) {
@@ -139,17 +145,19 @@ function fight() {
 }
 
 if (window.location.href.includes("11.html")) {
-
   // créé les variables de sessionStorage si elles n'existent pas
+  console.log(sessionStorage);
   if (
-    sessionStorage.getItem("player-life") == null ||
-    sessionStorage.getItem("enemy-life") == null
+    (sessionStorage.getItem("player-life") == null ||
+      sessionStorage.getItem("enemy-life") == null) &&
+    sessionStorage.getItem("can_play") != true
   ) {
     sessionStorage.setItem("player-life", health);
     sessionStorage.setItem("enemy-life", enemyHealth);
   }
 
   // attribue les valeurs de sessionStorage aux éléments HTML
+
   document.getElementById("player-attack").textContent =
     sessionStorage.getItem("attack");
   document.getElementById("player-defense").textContent =
@@ -161,20 +169,24 @@ if (window.location.href.includes("11.html")) {
 
   document.getElementById("enemy-life").textContent =
     sessionStorage.getItem("enemy-life");
-
-  // ajoute un écouteur d'événement pour le clic sur le lien
-  document
-    .getElementsByTagName("a")[0]
-    .addEventListener("click", function (event) {
-      if (document.querySelector('input[name="tour"]:checked')) {
-        fight();
-      } else {
-        event.preventDefault();
-        alert("Please select an action before proceeding.");
-        return;
-      }
-    });
 }
+
+// ajoute un écouteur d'événement pour le clic sur le lien
+document
+  .getElementsByTagName("a")[0]
+  .addEventListener("click", function (event) {
+    console.log("Début addEventListener");
+    if (document.querySelector('input[name="tour"]:checked')) {
+      event.preventDefault();
+      console.log("Fight() va commencer");
+      fight();
+    } else {
+      console.log("Aucun choix de tour sélectionné");
+      event.preventDefault();
+      alert("Please select an action before proceeding.");
+      return;
+    }
+  });
 
 if (window.location.href.includes("09.html")) {
   document
@@ -195,4 +207,50 @@ if (window.location.href.includes("09.html")) {
     });
 }
 
+if (window.location.href.includes("10.html")) {
+  document
+    .getElementsByTagName("a")[0]
+    .addEventListener("click", function (event) {
+      sessionStorage.setItem("can_play", true);
+    });
+}
 
+//Loader//
+
+// Quand la page est complètement chargée
+window.addEventListener("DOMContentLoaded", function () {
+  // On récupère le loader (la boîte qui s'affiche avec la note)
+  var loader = document.getElementById("loader");
+
+  // On sélectionne uniquement les liens avec la classe "delayed-link"
+  var links = document.querySelectorAll("a.delayed-link");
+
+  // Pour chaque lien concerné
+  links.forEach(function (link) {
+    link.addEventListener("click", function (event) {
+      // On récupère le lien vers lequel on veut aller
+      var destination = link.getAttribute("href");
+
+      // Si ce n'est pas un lien valide, on ne fait rien
+      if (
+        !destination || // lien vide
+        destination.startsWith("#") || // ancre interne
+        destination.startsWith("mailto:") || // lien email
+        destination.startsWith("tel:") // lien téléphone
+      ) {
+        return; // on laisse le comportement normal
+      }
+
+      // On empêche d'aller vers la page immédiatement
+      event.preventDefault();
+
+      // On affiche le loader (en flex pour le centrer)
+      loader.style.display = "flex";
+
+      // Après 2 secondes, on redirige vers la vraie page
+      setTimeout(function () {
+        window.location.href = destination;
+      }, 2000);
+    });
+  });
+});
