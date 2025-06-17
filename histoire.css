@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Italiana&family=Marko+One&family=Parkinsans:wght@300..800&display=swap");
 body {
   color: #a5a19b; /* couleur parchemin clair */
-  height: 100vh;
+  height: 100%;
   width: 100%;
   font-family: "Cinzel Decorative", serif; /* police avec vibe antique/viking */
   line-height: 1.6;
@@ -11,6 +11,7 @@ body {
   background: url("./ASSETS/img/falaise2.jpg"); /* Remplace avec ton chemin */
   background-size: cover;
   background-repeat: no-repeat;
+  /* overflow: hidden; */
 }
 
 h1 {
@@ -146,7 +147,7 @@ choice a {
 
 @keyframes scrollCredits {
   0% {
-    bottom: -100%;
+    bottom: -40%;
   }
   100% {
     bottom: 100%;
