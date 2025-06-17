@@ -106,6 +106,7 @@ function fight(attack, defense, strategy, health, enemyAttack, enemyDefense, ene
   // boucle de combat
   if (health > 0 && enemyHealth > 0) {
     document.querySelector("input[name=\"tour\"]:checked");
+    
   } else if (health <= 0) {
     window.location.href = "12.html";
   } else if (health < 30) {
