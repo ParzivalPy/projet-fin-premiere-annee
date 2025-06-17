@@ -208,7 +208,7 @@ function fight(event) {
         sessionStorage.removeItem("player-life");
         sessionStorage.removeItem("enemy-life");
         window.location.href = "12.html"; // Page de défaite
-      } else if (playerLife < 30) {
+      } else if (playerLife < 30 && enemyLife <= 0) {
         console.log("Le joueur est gravement blessé !");
         sessionStorage.removeItem("player-life");
         sessionStorage.removeItem("enemy-life");
