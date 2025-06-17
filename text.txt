@@ -104,48 +104,25 @@
 <choice idref="11"> Partir au combat <a>Chapitre 11</a></choice>
 
 <chapter id="11">Premier contact</chapter>
-<form>
-<p>Agh'Zarr bondit vers toi avec une vitesse inhumaine.</p>
+<form id="fight-form">
+<p id="fight-p">Agh'Zarr bondit vers toi avec une vitesse inhumaine.</p>
 <input type="radio" id="t1r1" name="tour">
-<label for="t1r1">Attaque frontale, tu hurles en visant sa poitrine.</label><br />
+<label for="t1r1">Attaque frontale, tu hurles en visant sa poitrine. (force + 20)</label><br />
 <input type="radio" id="t1r2" name="tour">
-<label for="t1r2">Tu esquives et contre-attaques.</label><br />
+<label for="t1r2">Tu esquives et contre-attaques. (défense - 10, attaque - 10)</label><br />
 <input type="radio" id="t1r3" name="tour">
 <label for="t1r3">Tu relies ton attaque avec celle d’Anaïs et Gabriel.</label><br />
 </form>
-<choice idref="12"> Utiliser cette méthode <a>Chapitre 12</a></choice>
+<choice idref="11"> Utiliser cette méthode <a id="fight-button">Chapitre 12</a></choice>
 
-<chapter id="12">La rage d'Agh'Zarr</chapter>
-<form>
-<p>Il frappe le sol et déclenche une onde de choc. Tes alliés sont projetés en arrière.</p>
-<input type="radio" id="t2r1" name="tour">
-<label for="t2r1">Tu entres en rage et fonces tête baissée.</label><br />
-<input type="radio" id="t2r2" name="tour">
-<label for="t2r2">Tu lèves ton bouclier, prêt à encaisser.</label><br />
-<input type="radio" id="t2r3" name="tour">
-<label for="t2r3">Tu feintes une chute pour l’attirer et frapper quand il baisse sa garde.</label><br />
-</form>
-<choice idref="13"> Utiliser cette méthode <a>Chapitre 13</a></choice>
-
-<chapter id="13">L'assault final</chapter>
-<form>
-<p>Agh’Zarr est blessé, titubant… mais sa haine grandit. C’est le dernier coup.</p>
-<input type="radio" id="t3r1" name="tour">
-<label for="t3r1">Tu attaques à pleine puissance.</label><br />
-<input type="radio" id="t3r2" name="tour">
-<label for="t3r2">Gabriel place un piège avec Anaïs, tu l’y attires</label><br />
-<input type="radio" id="t3r3" name="tour">
-<label for="t3r3">Tu te sacrifies pour une ouverture à Anaïs.</label><br />
-</form>
-
-<chapter id="14">Le Sang des Braves</chapter>
+<chapter id="12">Le Sang des Braves</chapter>
 <p>Le monde se teinte de rouge.</p>
 <p>Ton épée tombe. Ton cœur aussi. </p>
 <p>Tu vois Agh’Zarr abattre Anaïs… puis Gabriel. </p>
 <p>Plus aucun chant. Dyonie est perdue. </p>
 <p>"Tu es mort." </p>
 
-<chapter id="15">Le poids du Silence</chapter>
+<chapter id="13">Le poids du Silence</chapter>
 <p>Tu hurles, rassembles tout ce qu’il te reste de force, de colère, de douleur… Ta lame fend l’air une dernière fois, pleine de rage ancestrale. </p>
 <p>CLAC. </p>
 <p>Le coup porte. Agh’Zarr s’écroule à genoux… puis s’effondre à tes pieds. Tu restes là, figé. Tu entends ta propre respiration haletante, le cœur battant.</p>
@@ -169,7 +146,7 @@
 <p>Tu deviens une légende — non pas pour ce que tu as sauvé, mais pour ce que tu as perdu. </p>
 <p>"Tu as gagné. Mais tout est mort." </p>
 
-<chapter id="16">La victoire des vivants</chapter>
+<chapter id="14">La victoire des vivants</chapter>
 <p>Tu frappes une dernière fois. Agh’Zarr recule… titube… puis s’effondre. Un grand silence s’abat sur le champ de bataille.</p>
 <p>C’est fini.</p>
 <p>Tu restes debout, haletant, le regard vide. Autour de toi, la poussière retombe lentement.</p>

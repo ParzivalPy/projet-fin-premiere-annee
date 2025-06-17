@@ -98,6 +98,26 @@ function updateStats() {
   sessionStorage.setItem("strategy", strategy);
 }
 
+function fight(attack, defense, strategy, health) {
+  let enemyAttack = 50;
+  let enemyDefense = 35;
+  let enemyHealth = 250;
+
+  // boucle de combat
+  while (health > 0 && enemyHealth > 0) {
+    
+  }
+
+  //redirection en fonction de la santé
+  if (health <= 0) {
+    window.location.href = "14.html";
+  } else if (health < 30) {
+    window.location.href = "15.html";
+  } else {
+    window.location.href = "16.html";
+  }
+}
+
 if (window.location.href.includes("09.html")) {
   document
     .getElementsByTagName("a")[0]
