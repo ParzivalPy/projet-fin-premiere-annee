@@ -112,20 +112,14 @@ function enemyAttackFunction() {
   };
 }
 
-function fight(
-  attack,
-  defense,
-  strategy,
-  health,
-  enemyAttack,
-  enemyDefense,
-  enemyHealth
-) {
+function fight() {
   // boucle de combat
   if (health > 0 && enemyHealth > 0) {
     let fight_choose = document.querySelector('input[name="tour"]:checked');
     if (fight_choose == "t1r1") {
-      attack_enemy, (defense_enemy = enemyAttackFunction());
+      enemy = enemyAttackFunction();
+      let attack_enemy = enemy.attack_enemy;
+      let defense_enemy = enemy.defense_enemy;
       if (attack_enemy - defense * strategy > 0) {
         health -= attack_enemy - defense * strategy;
       }
@@ -133,6 +127,8 @@ function fight(
         enemyHealth -= (attack + 20) * strategy - defense_enemy;
       }
     }
+    sessionStorage.setItem("player-life", health);
+    sessionStorage.setItem("enemy-life", enemyHealth);
   } else if (health <= 0) {
     window.location.href = "12.html";
   } else if (health < 30) {
@@ -143,25 +139,35 @@ function fight(
 }
 
 if (window.location.href.includes("11.html")) {
+
+  // créé les variables de sessionStorage si elles n'existent pas
   if (
-    sessionStorage.getItem("attack") &&
-    sessionStorage.getItem("defense") &&
-    sessionStorage.getItem("strategy")
+    sessionStorage.getItem("player-life") == null ||
+    sessionStorage.getItem("enemy-life") == null
   ) {
-  document.getElementById("attack").textContent =}
+    sessionStorage.setItem("player-life", health);
+    sessionStorage.setItem("enemy-life", enemyHealth);
+  }
+
+  // attribue les valeurs de sessionStorage aux éléments HTML
+  document.getElementById("player-attack").textContent =
+    sessionStorage.getItem("attack");
+  document.getElementById("player-defense").textContent =
+    sessionStorage.getItem("defense");
+  document.getElementById("player-strat").textContent =
+    sessionStorage.getItem("strategy");
+  document.getElementById("player-life").textContent =
+    sessionStorage.getItem("player-life");
+
+  document.getElementById("enemy-life").textContent =
+    sessionStorage.getItem("enemy-life");
+
+  // ajoute un écouteur d'événement pour le clic sur le lien
   document
     .getElementsByTagName("a")[0]
     .addEventListener("click", function (event) {
       if (document.querySelector('input[name="tour"]:checked')) {
-        fight(
-          parseInt(sessionStorage.getItem("attack")),
-          parseInt(sessionStorage.getItem("defense")),
-          parseFloat(sessionStorage.getItem("strategy")),
-          health,
-          enemyAttack,
-          enemyDefense,
-          enemyHealth
-        );
+        fight();
       } else {
         event.preventDefault();
         alert("Please select an action before proceeding.");
