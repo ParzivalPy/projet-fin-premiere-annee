@@ -108,7 +108,11 @@ function enemyAttackFunction() {
   };
 }
 
-function fight() {
+let roundCounter = sessionStorage.getItem("round-counter")
+  ? parseInt(sessionStorage.getItem("round-counter"))
+  : 1; // Initialisation du compteur de rounds
+
+function fight(event) {
   // Récupérer les valeurs actuelles de vie du joueur et de l'ennemi
   let playerLife = parseInt(sessionStorage.getItem("player-life"));
   let enemyLife = parseInt(sessionStorage.getItem("enemy-life"));
@@ -219,6 +223,15 @@ function fight() {
         window.location.href = "11.html"; // Retour à la page de combat
       }
     } else if (fightChoose == "t1r3") {
+      if (roundCounter < 3) {
+        alert(
+          "Vous devez encore attendre",
+          3 - roundCounter,
+          "tour(s) avant de pouvoir utiliser cette stratégie."
+        );
+        event.preventDefault();
+        return;
+      }
       console.log("Début du combat");
       const enemy = enemyAttackFunction();
       const attackEnemy = enemy.attack_enemy;
@@ -230,10 +243,7 @@ function fight() {
       // Calcul des dégâts infligés au joueur
       if (attackEnemy - defense > 0) {
         playerLife -= attackEnemy - defense;
-        console.log(
-          "Dégâts subis par le joueur :",
-          attackEnemy - defense
-        );
+        console.log("Dégâts subis par le joueur :", attackEnemy - defense);
       }
 
       // Calcul des dégâts infligés à l'ennemi
@@ -316,7 +326,7 @@ document
     if (document.querySelector('input[name="tour"]:checked')) {
       event.preventDefault();
       console.log("Fight() va commencer");
-      fight();
+      fight(event);
     }
   });
 
