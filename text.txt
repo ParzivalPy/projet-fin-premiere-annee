@@ -53,7 +53,6 @@
 
 <chapter id="09"> C'est parti </chapter>
 <form>
-<p> Vos choix ici impacterons l'issue du combat.</p>
 <div class="question1">
 <p>Question 1 : Un camarade s’effondre d’épuisement pendant l’entraînement. Que fais-tu ?</p>
 <input type="radio" id="q1r1" name="question1">
