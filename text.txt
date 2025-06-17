@@ -140,8 +140,10 @@
 <p>Tu vois Agh’Zarr abattre Anaïs… puis Gabriel. </p>
 <p>Plus aucun chant. Dyonie est perdue. </p>
 <p>"Tu es mort." </p>
+<choice idref="15"> Passer au générique <a>Générique</a></choice>
 
-<chapter id="13"> Le poids du Silence </chapter>
+
+<chapter id="13"> Les cieux s'ouvrent </chapter>
 <p>Tu hurles, rassembles tout ce qu’il te reste de force, de colère, de douleur… Ta lame fend l’air une dernière fois, pleine de rage ancestrale. </p>
 <p>CLAC. </p>
 <p>Le coup porte. Agh’Zarr s’écroule à genoux… puis s’effondre à tes pieds. Tu restes là, figé. Tu entends ta propre respiration haletante, le cœur battant.</p>
@@ -164,6 +166,8 @@
 <p>Tu marches. Sans but. Sans foyer. Sans nom. </p>
 <p>Tu deviens une légende — non pas pour ce que tu as sauvé, mais pour ce que tu as perdu. </p>
 <p>"Tu as gagné. Mais tout est mort." </p>
+<choice idref="15"> Passer au générique <a>Générique</a></choice>
+
 
 <chapter id="14"> Vous ne tuerez pas mes alliés! </chapter>
 <p>Tu frappes une dernière fois. Agh’Zarr recule… titube… puis s’effondre. Un grand silence s’abat sur le champ de bataille.</p>
@@ -176,3 +180,32 @@
 <p>Et toi… Tu n’es plus le jeune Florian. </p>
 <p>Tu es devenu un guerrier. Un vrai.</p>
 <p> Bienvenue dans mon monde </p>
+<choice idref="15"> Passer au générique <a>Générique</a></choice>
+
+<chapter id="15"> Générique </chapter> 
+<div class="generique" id="generique">
+  <div class="generique-content">
+<p>Scénario : Lilian Morel, Anaïs Freslon, Gabriel Arthus </p> 
+<p> Titre de chapitre : Riot Games, Valorant </p> 
+<p>Direction artistique (CSS) : Anaïs Freslon, Gabriel Arthus </p> 
+<p> Script langage C : Gabriel Arthus, Anaïs Freslon </p> 
+<p>Javascript : Gabriel Arthus, Anaïs Freslon </p> 
+<p> Débogage : Gabriel Arthus , Anaïs Freslon, Florian Bescher </p> 
+<p> Ecriture du fichier texte : Anaïs Freslon, Gabriel Arthus </p> 
+<p> Graphismes : Anaïs Freslon </p> 
+<p>Bande son : Youtube </p> 
+<p> Agents Valorant mentionné : </p> 
+<p> Astra </p> 
+<p> KillJoy </p> 
+<p> Fade </p> 
+<p> Deadlock </p> 
+<p> Chamber </p> 
+<p> GTA </p> 
+<p> Iso </p> 
+<p> Gekko </p> 
+<p> Brimstone </p> 
+<p> Astra </p> 
+<p> Sage </p> 
+<p> Viper </p> 
+</div>
+</div>
