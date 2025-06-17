@@ -139,7 +139,7 @@ choice a {
   height: auto;
   text-align: center;
   font-size: 1.2rem;
-  animation: scrollCredits 1s linear forwards;
+  animation: scrollCredits 30s linear forwards;
   z-index: -1;
 }
 

@@ -396,3 +396,43 @@ window.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// ------------------------------------------------
+//
+//                 Musique
+//
+// ------------------------------------------------
+
+if (window.location.href.includes("11.html")) {
+  const audio = new Audio("../ASSETS/mp3/ivars_wrath.mp3");
+  audio.play();
+
+  window.addEventListener("beforeunload", () => {
+    sessionStorage.setItem("audioTime2", audio.currentTime);
+  });
+
+  window.addEventListener("load", () => {
+    const audio = new Audio("../ASSETS/mp3/ivars_wrath.mp3");
+    const savedTime = sessionStorage.getItem("audioTime2");
+    if (savedTime) {
+      audio.currentTime = parseFloat(savedTime);
+    }
+    audio.play();
+  });
+} else {
+  const audio = new Audio("../ASSETS/mp3/son_viking.mp3");
+  audio.play();
+
+  window.addEventListener("beforeunload", () => {
+    sessionStorage.setItem("audioTime", audio.currentTime);
+  });
+
+  window.addEventListener("load", () => {
+    const audio = new Audio("../ASSETS/mp3/son_viking.mp3");
+    const savedTime = sessionStorage.getItem("audioTime");
+    if (savedTime) {
+      audio.currentTime = parseFloat(savedTime);
+    }
+    audio.play();
+  });
+}
