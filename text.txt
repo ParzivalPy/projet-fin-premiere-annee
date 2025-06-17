@@ -104,7 +104,25 @@
 <choice idref="11"> Partir au combat <a>Chapitre 11</a></choice>
 
 <chapter id="11">Premier contact</chapter>
+
 <form id="fight-form">
+<p> Vos choix ici impacterons l'issue du combat.</p>
+<div id="stats">
+<div id="stats-player">
+<h3>Florian</h3>
+<p><span class="stat">Attaque:</span> <span id="player-attack">??</span></p>
+<p><span class="stat">Défense:</span> <span id="player-defense">??</span></p>
+<p><span class="stat">Stratégie:</span> <span id="player-strat">??</span></p>
+<p><span class="stat">Vie:</span> <span id="player-life">100</span></p>
+</div>
+<div id="stats-enemy">
+<h3>Agh'Zarr</h3>
+<p><span class="stat">Attaque:</span> <span id="enemy-attack">??</span></p>
+ <p><span class="stat">Défense:</span> <span id="enemy-defense">??</span></p>
+<p><span class="stat">Stratégie:</span> <span id="enemy-strat">??</span></p>
+<p><span class="stat">Vie:</span> <span id="enemy-life">100</span></p>
+</div>
+</div>
 <p id="fight-p">Agh'Zarr bondit vers toi avec une vitesse inhumaine.</p>
 <input type="radio" id="t1r1" name="tour">
 <label for="t1r1">Attaque frontale, tu hurles en visant sa poitrine. (force + 20)</label><br />
