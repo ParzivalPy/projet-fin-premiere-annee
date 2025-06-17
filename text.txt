@@ -7,52 +7,53 @@
 <p>Florian, encore jeune, doit passer sa traditionnelle quête d'initiation de guerrier. Il décide que l'objet de cette dernière sera la découverte d'un moyen de repousser les envahisseurs d'Eyrmös.</p>
 <choice idref="01">Débuter l'histoire. <a>Chapitre 1</a></choice>
 
-<chapter id="01">Le camp d’entraînement</chapter>
+<chapter id="01"> Monde divisé </chapter>
 <p>Florian arrive sur le camp d’entraînement, il y’a beaucoup de monde, tous les hommes en âge de combattre. </p>
 <p>Cependant, en regardant bien, il croise le regard d’une jeune femme, entouré d’hommes ricanant, se moquant de la présence d’une femme. Florian trouve cela injuste mais hésite à intervenir : </p>
 <choice idref="02"> Aller la défendre, quitte à se mettre des gens à dos <a> chapitre 2 </a></choice>
 <choice idref="03"> Ne rien faire <a> chapitre 3 </a></choice>
 
-<chapter id="02">La rencontre</chapter>
+<chapter id="02"> Initié! </chapter>
 <p>Gabriel dissuade les autres vikings d’arrêter d’harceler cette jeune fille car ce n’est moralement pas correct et indigne de leur part. </p>
 <p>Une grande partie des futurs combattants l’admettent mais d’autres l’insultent en partant. La jeune fille se présente et le remercie pour l’aide de Florian. </p>
 <p> Ils commencent à faire connaissance, elle semble être une jeune fille très intelligente. Anaïs présente un autre ami qui s’appelle Gabriel, c’est un jeune homme discret et réservé mais qui semble tout aussi gentil. <p>
 <choice idref="04"> Leur entraineur s’approche et se présente aux futurs guerriers <a> chapitre 4 </a></choice>
 
-<chapter id="03">La rencontre</chapter>
+<chapter id="03"> Affronte tes peurs </chapter>
 <p>Florian décide de ne pas aller aider la jeune fille (Florian préfère ne pas s’interposer afin d’éviter d’aggraver la situation). </p>
 <p>Cependant, une autre personne attire son attention : un jeune homme grand, avec un regard plongé dans le vide. Leur regard se croise et cet inconnu décide alors de l’approcher.   </p>
 <p> Il se présente, il s’appelle Gabriel, il a été recruté de force car personne ne peut le battre lorsqu’il s’agit d’user de la stratégie. Florian est assez impressionné. </p>
 <p> Gabriel avoue alors que la jeune fille se retrouvant en ce moment entouré d’homme est une amie à lui. A eux deux, ils décident alors d’aller la voir et ils se mettent tous les trois à parler. Tout va pour le mieux. </p>
 <choice idref="04"> Leur entraineur s’approche et se présente aux futurs guerriers <a> chapitre 4 </a></choice>
 
-<chapter id="04">L’intrépide entraîneur</chapter>
+<chapter id="04"> Place au cauchemar </chapter>
 <p>Un entraîneur se présente, il s’appelle Noam et, c’est un grand guerrier reconnu de tous malgré sa froideur et son égocentrisme, ce qui fait de lui un homme détestable. </p>
 <p>Ce camp commence déjà mal, Noam vient vers moi et me demande de me présenter, son regard est rempli de mépris, je n’ai pas envie de me soumettre à cet homme : </p>
 <choice idref="05">Je fournis un effort et je me présente de manière correcte <a> Chapitre 5</a> </choice>
 <choice idref="06"> Je lui rends la pareille et je me présente irrespectueusement <a> Chapitre 6</a> </choice>
 
-<chapter id="05">L’installation</chapter>
+<chapter id="05"> Mon territoire, mes règles </chapter>
 <p>Tout s’est bien passé, je pars m’installer dans les chambres communes avec Anaïs et Gabriel, c’est le début d’une grande aventure.  </p>
 <choice idref="08"> Commencer l’entraînement <a> Chapitre 8</a> </choice>
 
-<chapter id="06">Punition et regret </chapter>
+<chapter id="06"> Tu veux jouer? Jouons </chapter>
 <p>Je crois que je n’aurai jamais dû me présenter de cette manière, dès le premier jour, je me retrouve déjà à être punis...à nettoyer les toilettes. </p>
 <p>Au moins, je ne suis pas seul : un autre groupe est à l’autre bout de la pièce, ils ne m’ont pas l’air très sympathique mais je peux quand même tenter de faire connaissance. </p>
 <choice idref="07"> Je vais les voir <a> Chapitre 7 </a></choice>
 <choice idref="05">Je finis ma corvée seule dans mon coin pour en finir le plus vite <a> Chapitre 5 </a></choice>
 
-<chapter id="07">Wasted</chapter>
+<chapter id="07"> Wasted </chapter>
 <p>J’aurai dû me fier à mon instinct, ce groupe incarne le mal et la malveillance, je suis en train de me faire battre par 4 personnes, je ne peux rien faire. </p>
 <p>Florian succombe de ses blessures, vous êtes mort. </p>
 <choice idref="01"> Wasted, retour au chapitre 1<a> Chapitre 1 </a></choice>
 
-<chapter id="08"> Début de l’entraînement </chapter>
+<chapter id="08"> Pas de distraction </chapter>
 <p>Le lendemain de notre installation, l’entraînement commence, c’est dur mais nous arrivons à nous pousser vers le haut. Nous nous entrainons sur trois aspects différents : renforcement mental, renforcement physique et les stratégies de défense.</p>
 <choice idref="09"> Débuter l’entraînement <a> Chapitre 9 </a></choice>
 
-<chapter id="09"> Faites les bons choix </chapter>
+<chapter id="09"> C'est parti </chapter>
 <form>
+<p> Vos choix ici impacterons l'issue du combat.</p>
 <div class="question1">
 <p>Question 1 : Un camarade s’effondre d’épuisement pendant l’entraînement. Que fais-tu ?</p>
 <input type="radio" id="q1r1" name="question1">
@@ -87,12 +88,11 @@
 <input type="radio" id="q4r2" name="question4">
 <label for="q4r2">Tu grimpes vite et sans hésitation pour impressionner les autres.</label><br />
 <input type="radio" id="q4r3" name="question4">
-<label for="q4r3">Tu aides les autres à grimper en jetant une corde.</label><br />
 </div>
 </form>
 <choice idref="10">Continuer paisiblement votre vie <button id="validate-training">Chapitre 10</button></choice>
 
-<chapter id="10"> Le Jugement de Dyonie </chapter>
+<chapter id="10"> Préparez vous pour l'enfer </chapter>
 <p>L’heure est venue. </p>
 <p> Sur la plage battue par les vents, les Vikings se tiennent prêts. À leurs côtés, les majestueux Drekí Wødr grondent. </p>
 <p>Toi et tes alliés, Anaïs et Gabriel, avez découvert l’existence d’un général monstrueux, né d’un rituel interdit : Agh’Zarr le Fléau, une abomination mi-homme mi-bête, contrôlée par Himilcar lui-même. </p>
@@ -103,13 +103,13 @@
 <p>Tu inspires. Tu es prêt. </p>
 <choice idref="11"> Partir au combat <a>Chapitre 11</a></choice>
 
-<chapter id="11">Premier contact</chapter>
+<chapter id="11"> Place au cauchemar </chapter>
 
 <form id="fight-form">
-<p> Vos choix ici impacterons l'issue du combat.</p>
 <div id="stats">
 <div id="stats-player">
 <h3>Florian</h3>
+
 <p><span class="stat">Attaque:</span> <span id="player-attack">??</span></p>
 <p><span class="stat">Défense:</span> <span id="player-defense">??</span></p>
 <p><span class="stat">Stratégie:</span> <span id="player-strat">??</span></p>
@@ -117,6 +117,7 @@
 </div>
 <div id="stats-enemy">
 <h3>Agh'Zarr</h3>
+
 <p><span class="stat">Attaque:</span> <span id="enemy-attack">??</span></p>
  <p><span class="stat">Défense:</span> <span id="enemy-defense">??</span></p>
 <p><span class="stat">Stratégie:</span> <span id="enemy-strat">??</span></p>
@@ -133,14 +134,14 @@
 </form>
 <choice idref="11"> Utiliser cette méthode <a id="fight-button">Chapitre 12</a></choice>
 
-<chapter id="12">Le Sang des Braves</chapter>
+<chapter id="12"> Nulle part où aller </chapter>
 <p>Le monde se teinte de rouge.</p>
 <p>Ton épée tombe. Ton cœur aussi. </p>
 <p>Tu vois Agh’Zarr abattre Anaïs… puis Gabriel. </p>
 <p>Plus aucun chant. Dyonie est perdue. </p>
 <p>"Tu es mort." </p>
 
-<chapter id="13">Le poids du Silence</chapter>
+<chapter id="13"> Le poids du Silence </chapter>
 <p>Tu hurles, rassembles tout ce qu’il te reste de force, de colère, de douleur… Ta lame fend l’air une dernière fois, pleine de rage ancestrale. </p>
 <p>CLAC. </p>
 <p>Le coup porte. Agh’Zarr s’écroule à genoux… puis s’effondre à tes pieds. Tu restes là, figé. Tu entends ta propre respiration haletante, le cœur battant.</p>
@@ -164,7 +165,7 @@
 <p>Tu deviens une légende — non pas pour ce que tu as sauvé, mais pour ce que tu as perdu. </p>
 <p>"Tu as gagné. Mais tout est mort." </p>
 
-<chapter id="14">La victoire des vivants</chapter>
+<chapter id="14"> Vous ne tuerez pas mes alliés! </chapter>
 <p>Tu frappes une dernière fois. Agh’Zarr recule… titube… puis s’effondre. Un grand silence s’abat sur le champ de bataille.</p>
 <p>C’est fini.</p>
 <p>Tu restes debout, haletant, le regard vide. Autour de toi, la poussière retombe lentement.</p>
@@ -174,3 +175,4 @@
 <p>Contre toute attente, vous êtes en vie. Pas tous. Mais assez pour reconstruire. Assez pour raconter ce jour. </p>
 <p>Et toi… Tu n’es plus le jeune Florian. </p>
 <p>Tu es devenu un guerrier. Un vrai.</p>
+<p> Bienvenue dans mon monde </p>

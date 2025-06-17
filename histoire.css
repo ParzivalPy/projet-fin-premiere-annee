@@ -81,3 +81,47 @@ a {
 choice a {
   margin-left: 20px;
 }
+
+
+#stats{
+  display : flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap : 20px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+#stats-player, #stats-enemy{
+  background-color: #5b3a29; /* fond marron foncé */
+  color: #f3e9dc;
+  border-radius: 12px;
+  width: 250px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+#stats-player h3,
+#stats-enemy h3 {
+  background-color: #3d261a; /* plus foncé */
+  margin: 0;
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 2px solid #d6b18a;
+}
+
+#stats-player p,
+#stats-enemy p {
+  padding: 5px;
+  font-size: 15px;
+  margin: 10px 20px;
+  border-bottom:1px solid rgba(255, 255, 255, 0.1) ;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
