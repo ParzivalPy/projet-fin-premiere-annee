@@ -225,9 +225,7 @@ function fight(event) {
     } else if (fightChoose == "t1r3") {
       if (roundCounter < 3) {
         alert(
-          "Vous devez encore attendre",
-          3 - roundCounter,
-          "tour(s) avant de pouvoir utiliser cette stratégie."
+          "Vous devez encore attendre " + (3 - roundCounter) + " tour(s) avant de pouvoir utiliser cette stratégie."
         );
         event.preventDefault();
         return;
