@@ -14,7 +14,7 @@ if (sessionStorage.getItem("defense")) {
   defense = parseInt(sessionStorage.getItem("defense"));
 }
 if (sessionStorage.getItem("strategy")) {
-  strategy = parseInt(sessionStorage.getItem("strategy"));
+  strategy = parseFloat(sessionStorage.getItem("strategy"));
 }
 
 console.log("Initial Stats:");
@@ -97,16 +97,42 @@ function updateStats() {
     strategy += 15;
   }
 
+  strategy = parseInt(strategy) / 2 / 100 + 1;
   sessionStorage.setItem("attack", attack);
   sessionStorage.setItem("defense", defense);
   sessionStorage.setItem("strategy", strategy);
 }
 
-function fight(attack, defense, strategy, health, enemyAttack, enemyDefense, enemyHealth) {
+function enemyAttackFunction() {
+  let enemyAttackValue = Math.floor(Math.random() * enemyAttack) + 1;
+  let enemyDefenseValue = Math.floor(Math.random() * enemyDefense) + 1;
+  return {
+    attack_enemy: enemyAttackValue,
+    defense_enemy: enemyDefenseValue,
+  };
+}
+
+function fight(
+  attack,
+  defense,
+  strategy,
+  health,
+  enemyAttack,
+  enemyDefense,
+  enemyHealth
+) {
   // boucle de combat
   if (health > 0 && enemyHealth > 0) {
-    document.querySelector("input[name=\"tour\"]:checked");
-    
+    let fight_choose = document.querySelector('input[name="tour"]:checked');
+    if (fight_choose == "t1r1") {
+      attack_enemy, (defense_enemy = enemyAttackFunction());
+      if (attack_enemy - defense * strategy > 0) {
+        health -= attack_enemy - defense * strategy;
+      }
+      if (attack * strategy - defense_enemy > 0) {
+        enemyHealth -= (attack + 20) * strategy - defense_enemy;
+      }
+    }
   } else if (health <= 0) {
     window.location.href = "12.html";
   } else if (health < 30) {
@@ -114,6 +140,34 @@ function fight(attack, defense, strategy, health, enemyAttack, enemyDefense, ene
   } else {
     window.location.href = "14.html";
   }
+}
+
+if (window.location.href.includes("11.html")) {
+  if (
+    sessionStorage.getItem("attack") &&
+    sessionStorage.getItem("defense") &&
+    sessionStorage.getItem("strategy")
+  ) {
+  document.getElementById("attack").textContent =}
+  document
+    .getElementsByTagName("a")[0]
+    .addEventListener("click", function (event) {
+      if (document.querySelector('input[name="tour"]:checked')) {
+        fight(
+          parseInt(sessionStorage.getItem("attack")),
+          parseInt(sessionStorage.getItem("defense")),
+          parseFloat(sessionStorage.getItem("strategy")),
+          health,
+          enemyAttack,
+          enemyDefense,
+          enemyHealth
+        );
+      } else {
+        event.preventDefault();
+        alert("Please select an action before proceeding.");
+        return;
+      }
+    });
 }
 
 if (window.location.href.includes("09.html")) {
@@ -135,9 +189,8 @@ if (window.location.href.includes("09.html")) {
     });
 }
 
+//Loader//
 
-//Loader// 
- 
 // Quand la page est complètement chargée
 window.addEventListener("DOMContentLoaded", function () {
   // On récupère le loader (la boîte qui s'affiche avec la note)
