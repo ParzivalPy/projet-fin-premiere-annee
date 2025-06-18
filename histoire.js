@@ -333,7 +333,7 @@ if (window.location.href.includes("11.html")) {
     "Agh'Zarr brandit son arme colossale, l'abattant avec une force capable de pulvériser la pierre.",
     "En un éclair, Agh'Zarr disparaît dans un voile de ténèbres, prêt à frapper là où tu t'y attends le moins.",
     "Agh'Zarr marque le sol d'un symbole étrange, son aura imposant un silence glacial autour de lui.",
-    "D'un geste lent, Agh'Zarr ramasse un éclat de pierre, le réduisant en poussière entre ses doigts massifs."
+    "D'un geste lent, Agh'Zarr ramasse un éclat de pierre, le réduisant en poussière entre ses doigts massifs.",
   ];
   const randomIndex = Math.floor(Math.random() * liste.length);
   document.getElementById("fight-p").innerText = liste[randomIndex];
@@ -454,4 +454,10 @@ if (window.location.href.includes("11.html")) {
     }
     audio.play();
   });
+
+  if (window.location.href.includes("15.html")) {
+    setTimeout(() => {
+      window.location.href = "00.html";
+    }, 30000);
+  }
 }
