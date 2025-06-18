@@ -158,3 +158,30 @@ choice a {
   justify-content: center;
   text-align: center;
 }
+
+
+.bordure{
+  position: absolute;
+  width: 700px;
+  opacity: 0.8;
+  filter: brightness(0) saturate(100%) invert(84%) sepia(47%) saturate(150%) hue-rotate(357deg) brightness(97%) contrast(93%);
+}
+
+.haut-droite {
+  top: 120px;
+  right: 0;
+}
+
+.bas-gauche {
+  bottom: 20px;
+  left: 0;
+}
+
+
+.wasted-logo {
+  display: block;
+  margin : 20px auto;
+  width: 400px;
+  max-width: 80%;
+  opacity: 0.9;
+}

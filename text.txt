@@ -42,10 +42,12 @@
 <choice idref="07"> Je vais les voir <a> Chapitre 7 </a></choice>
 <choice idref="05">Je finis ma corvée seule dans mon coin pour en finir le plus vite <a> Chapitre 5 </a></choice>
 
-<chapter id="07"> Wasted </chapter>
+<chapter id="07"></chapter>
+<img src="/ASSETS/img/wasted.png" class="wasted-logo">
 <p>J’aurai dû me fier à mon instinct, ce groupe incarne le mal et la malveillance, je suis en train de me faire battre par 4 personnes, je ne peux rien faire. </p>
 <p>Florian succombe de ses blessures, vous êtes mort. </p>
 <choice idref="01"> Wasted, retour au chapitre 1<a> Chapitre 1 </a></choice>
+
 
 <chapter id="08"> Pas de distraction </chapter>
 <p>Le lendemain de notre installation, l’entraînement commence, c’est dur mais nous arrivons à nous pousser vers le haut. Nous nous entrainons sur trois aspects différents : renforcement mental, renforcement physique et les stratégies de défense.</p>
@@ -183,6 +185,8 @@
 <choice idref="15"> Passer au générique <a>Générique</a></choice>
 
 <chapter id="15"> Générique </chapter> 
+<img src="/ASSETS/img/logo.png" class="bordure bas-gauche">
+<img src="/ASSETS/img/logo2.png" class="bordure haut-droite">
 <div class="generique" id="generique">
   <div class="generique-content">
 <p>Scénario : Lilian Morel, Anaïs Freslon, Gabriel Arthus </p> 
