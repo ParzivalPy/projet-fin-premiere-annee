@@ -14,7 +14,7 @@
 <choice idref="03"> Ne rien faire <a> chapitre 3 </a></choice>
 
 <chapter id="02"> Initié! </chapter>
-<p>Gabriel dissuade les autres vikings d’arrêter d’harceler cette jeune fille car ce n’est moralement pas correct et indigne de leur part. </p>
+<p>Florian dissuade les autres vikings d’arrêter d’harceler cette jeune fille car ce n’est moralement pas correct et indigne de leur part. </p>
 <p>Une grande partie des futurs combattants l’admettent mais d’autres l’insultent en partant. La jeune fille se présente et le remercie pour l’aide de Florian. </p>
 <p> Ils commencent à faire connaissance, elle semble être une jeune fille très intelligente. Anaïs présente un autre ami qui s’appelle Gabriel, c’est un jeune homme discret et réservé mais qui semble tout aussi gentil. <p>
 <choice idref="04"> Leur entraineur s’approche et se présente aux futurs guerriers <a> chapitre 4 </a></choice>
