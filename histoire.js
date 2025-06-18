@@ -5,7 +5,7 @@ let health = 100;
 
 let enemyAttack = 50;
 let enemyDefense = 35;
-let enemyHealth = 350;
+let enemyHealth = 300;
 
 if (sessionStorage.getItem("attack")) {
   attack = parseInt(sessionStorage.getItem("attack"));
@@ -232,6 +232,8 @@ function fight(event) {
         event.preventDefault();
         return;
       }
+      roundCounter = 0;
+      sessionStorage.setItem("round-counter", roundCounter);
       console.log("Début du combat");
       const enemy = enemyAttackFunction();
       const attackEnemy = enemy.attack_enemy;
@@ -261,7 +263,7 @@ function fight(event) {
       console.log("Vie de l'ennemi après le combat :", enemyLife);
 
       // Vérifier les conditions de fin de combat
-      if (playerLife <= 0) {
+      if (playerLife <= 0 && enemyLife > playerLife) {
         console.log("Le joueur a perdu !");
         sessionStorage.removeItem("player-life");
         sessionStorage.removeItem("enemy-life");
@@ -271,7 +273,7 @@ function fight(event) {
         sessionStorage.removeItem("player-life");
         sessionStorage.removeItem("enemy-life");
         window.location.href = "13.html"; // Page de blessure critique
-      } else if (enemyLife <= 0) {
+      } else if (enemyLife <= 0 && playerLife > enemyLife) {
         console.log("L'ennemi a été vaincu !");
         sessionStorage.removeItem("player-life");
         sessionStorage.removeItem("enemy-life");
@@ -288,6 +290,11 @@ function fight(event) {
       sessionStorage.setItem("enemy-life", enemyHealth);
       window.location.href = "11.html";
     }
+    roundCounter++;
+    sessionStorage.setItem("round-counter", roundCounter);
+  } else {
+    roundCounter = 0; // Réinitialiser le compteur de rounds si le combat est terminé
+    sessionStorage.setItem("round-counter", roundCounter);
   }
 }
 
@@ -319,16 +326,28 @@ if (window.location.href.includes("11.html")) {
 }
 
 // ajoute un écouteur d'événement pour le clic sur le lien
-document
-  .getElementsByTagName("a")[0]
-  .addEventListener("click", function (event) {
-    console.log("Début addEventListener");
-    if (document.querySelector('input[name="tour"]:checked')) {
-      event.preventDefault();
-      console.log("Fight() va commencer");
-      fight(event);
-    }
-  });
+if (window.location.href.includes("11.html")) {
+  liste = [
+    "Agh'Zarr bondit vers toi avec une vitesse inhumaine.",
+    "Les yeux d'Agh'Zarr luisent d'une lueur maléfique alors qu'il charge, sa silhouette massive emplissant l'espace.",
+    "Agh'Zarr brandit son arme colossale, l'abattant avec une force capable de pulvériser la pierre.",
+    "En un éclair, Agh'Zarr disparaît dans un voile de ténèbres, prêt à frapper là où tu t'y attends le moins.",
+    "Agh'Zarr marque le sol d'un symbole étrange, son aura imposant un silence glacial autour de lui.",
+    "D'un geste lent, Agh'Zarr ramasse un éclat de pierre, le réduisant en poussière entre ses doigts massifs."
+  ];
+  const randomIndex = Math.floor(Math.random() * liste.length);
+  document.getElementById("fight-p").innerText = liste[randomIndex];
+  document
+    .getElementsByTagName("a")[0]
+    .addEventListener("click", function (event) {
+      console.log("Début addEventListener");
+      if (document.querySelector('input[name="tour"]:checked')) {
+        event.preventDefault();
+        console.log("Fight() va commencer");
+        fight(event);
+      }
+    });
+}
 
 if (window.location.href.includes("09.html")) {
   document

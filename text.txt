@@ -126,13 +126,13 @@
 <p><span class="stat">Vie:</span> <span id="enemy-life">100</span></p>
 </div>
 </div>
-<p id="fight-p">Agh'Zarr bondit vers toi avec une vitesse inhumaine.</p>
+<p id="fight-p"></p>
 <input type="radio" id="t1r1" name="tour">
-<label for="t1r1">Attaque frontale: utilise force+20</label><br />
+<label for="t1r1">Attaque frontale: utilise attaque+20</label><br />
 <input type="radio" id="t1r2" name="tour">
 <label for="t1r2">Tu esquives et contre-attaques: utilise défense+10 et attaque-10</label><br />
 <input type="radio" id="t1r3" name="tour">
-<label for="t1r3">Tu relies ton attaque avec celle d’Anaïs et Gabriel: utilise force + 50</label><br />
+<label for="t1r3">Tu relies ton attaque avec celle d’Anaïs et Gabriel: utilise attaque+50</label><br />
 </form>
 <choice idref="11"> Utiliser cette méthode <a id="fight-button">Chapitre 12</a></choice>
 
