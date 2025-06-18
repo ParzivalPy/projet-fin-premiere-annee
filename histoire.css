@@ -62,7 +62,7 @@ form p {
     0,
     0.5
   ); /* Exemple d'opacité avec une couleur de fond */
-  z-index: -1; /* Place l'élément derrière les autres contenus */
+  z-index: -1; 
 }
 
 .story-container {
